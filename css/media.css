@@ -44,6 +44,10 @@
 	}
 }
 @media(max-width: 767px){
+	.suppliers-slider{
+		padding-left: 50px;
+		padding-right: 50px;
+	}
 	.container{
 		padding-left: 25px;
 		padding-right: 25px;
@@ -107,7 +111,10 @@
 	.all_review{
 		position: absolute;
 		right:0;
-		top: 35px;
+		top: 37px;
+	}
+	.news-container .all_review{
+		top: 55px;
 	}
 	.why-we-block{
 		height: 160px;
@@ -149,6 +156,12 @@
 		}
 	.navbar-header{
 		margin-top: 10px;
+	}
+	.owl-item{
+		text-align: center;
+	}
+	.suppliers-slider .next{
+		right: 0;
 	}
 }
 
@@ -197,6 +210,41 @@
 	}
 	.header_right{
 		width: 100%;
+	}
+	.phone{
+		float: none;
+		text-align: center;
+		margin-left: 0;
+	}
+	.why-we-container .col-xs-4{
+		width:50%;
+	}
+	.review{
+		width: 100%;
+	}
+	.new:first-child{
+		float: none;
+		width: 100%;
+	}
+	.new:nth-child(2){
+		float: none;
+		width: 100%;
+	}
+	.mobile-cat-link{
+		width: 135px;
+	}
+	.my-hidden{
+		display: none !important;
+	}
+	.col-530{
+		width: 100%;
+	}
+	.suppliers-slider{
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+	.item-container{
+		padding-right: 0;
 	}
 
 }

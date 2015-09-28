@@ -4,10 +4,18 @@
   		var owlSuppliers = $('#suppliers')
  
 	  owlColor.owlCarousel({
-	      items : 3
+	      items : 3,
+	      itemsDesktop : [1200,3],
+	      itemsDesktopSmall : [991,3],
+	      itemsTablet: [767,3],
+	      itemsMobile : [400,3]
 	  });
 	  owlSuppliers.owlCarousel({
-	      items : 6
+	      items : 6,
+	      itemsDesktop : [1300,6],
+	      itemsDesktopSmall : [1199,4],
+	      itemsTablet: [991,3],
+	      itemsMobile : [530,2]
 	  });
  	
 

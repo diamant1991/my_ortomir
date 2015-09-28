@@ -298,6 +298,7 @@ a:hover {
 .item-block:hover .visible-collapse {
   padding-bottom: 50px;
   padding-top: 20px;
+  height: 145px;
 }
 .item-block:hover .choice-block {
   top: auto;
@@ -437,7 +438,7 @@ a:hover {
 }
 .visible-collapse {
   position: relative;
-  height: 145px;
+  height: 110px;
   padding-top: 50px;
 }
 .choice-block {
@@ -641,6 +642,7 @@ a:hover {
   font-family: 'MyriadPro';
   font-size: 14px;
   letter-spacing: 2px;
+  cursor: pointer;
 }
 .mobile-up {
   width: 135px;
@@ -658,6 +660,7 @@ a:hover {
   font-family: 'MyriadPro';
   font-size: 14px;
   letter-spacing: 2px;
+  cursor: pointer;
 }
 .bottom_menu ul li {
   list-style: none;
