@@ -1244,3 +1244,113 @@ a:hover {
 .screen-news .new {
   background-color: transparent;
 }
+.nav-tabs {
+  display: inline-block;
+  position: relative;
+  top: 14px;
+}
+.list-item-container {
+  position: relative;
+  height: 120px;
+  margin-bottom: 7px;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  padding-left: 150px;
+  padding-right: 390px;
+}
+.list-item-img {
+  position: absolute;
+  z-index: 2;
+  text-align: center;
+  display: table;
+  width: 150px;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+.variant-item {
+  position: absolute;
+  width: 390px;
+  display: table;
+  padding-right: 10px;
+  height: 100%;
+  right: 0;
+  top: 0;
+  z-index: 2;
+}
+.list-item-price {
+  float: left;
+}
+.list-item-price .old_price {
+  color: #9b9b9b;
+  font-size: 20px;
+  text-decoration: line-through;
+  font-family: 'OpenSansBold';
+  margin-bottom: 0;
+  line-height: 1.2;
+}
+.list-item-price .price {
+  color: #202020;
+  font-size: 24px;
+  font-family: 'OpenSansBold';
+  margin-bottom: 0;
+  line-height: 1.2;
+}
+.list-item-add {
+  float: right;
+  width: 130px;
+  height: 30px;
+  margin-top: 8px;
+}
+.list-item-add a {
+  display: block;
+  width: 100%;
+  height: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #0064c9;
+  color: white;
+  line-height: 30px;
+  font-size: 14px;
+  font-family: 'MyriadPro';
+  letter-spacing: 2px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+.list-item-col {
+  float: left;
+  margin-left: 25px;
+}
+.list-item-col .input .minus {
+  width: 29px;
+  height: 29px;
+  top: 8px;
+  background: url(../images/big-minus.png) no-repeat !important;
+}
+.list-item-col .input .plus {
+  width: 29px;
+  height: 29px;
+  top: 8px;
+  background: url(../images/big-plus.png) no-repeat !important;
+}
+.list-item-col .input input[type="text"] {
+  height: 29px;
+  color: #272727;
+  font-size: 18px;
+  border: 0;
+  width: 35px;
+}
+.list-description {
+  text-transform: uppercase;
+  color: #202020;
+  font-size: 12px;
+  font-family: 'OpenSansBold';
+  padding-top: 20px;
+}
+.show-more-list {
+  margin-bottom: 25px;
+}
+.show-more-list .pagination {
+  top: 0;
+}
