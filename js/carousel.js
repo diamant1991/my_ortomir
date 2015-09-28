@@ -14,8 +14,8 @@
 	      items : 6,
 	      itemsDesktop : [1300,6],
 	      itemsDesktopSmall : [1199,4],
-	      itemsTablet: [991,3],
-	      itemsMobile : [530,2]
+	      itemsTablet: [991,5],
+	      itemsMobile : [767,3]
 	  });
  	
 

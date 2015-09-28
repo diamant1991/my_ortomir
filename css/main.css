@@ -1219,3 +1219,28 @@ a:hover {
 .mobile-slider {
   margin-top: 20px;
 }
+.screen-review {
+  padding-right: 10px;
+}
+.screen-review header {
+  position: relative;
+}
+.screen-review .all_review {
+  position: absolute;
+  right: 50px;
+  bottom: 4px;
+}
+.screen-news {
+  padding-right: 10px;
+}
+.screen-news header {
+  position: relative;
+}
+.screen-news .all_review {
+  position: absolute;
+  right: 50px;
+  bottom: 4px;
+}
+.screen-news .new {
+  background-color: transparent;
+}

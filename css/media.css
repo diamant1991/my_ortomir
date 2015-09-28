@@ -101,21 +101,12 @@
 	}
 	.review{
 		background-color: transparent;
-		float: left;
-		width:50%;
 	}
 	.home_right{
 		padding-left: 0;
 		position: relative;
 	}
-	.all_review{
-		position: absolute;
-		right:0;
-		top: 37px;
-	}
-	.news-container .all_review{
-		top: 55px;
-	}
+
 	.why-we-block{
 		height: 160px;
 		margin-bottom: 5px;
@@ -124,14 +115,7 @@
 		padding-left: 0;
 		margin-top: 20px;
 	}
-	.new:first-child{
-		float: left;
-		width: 49%;
-	}
-	.new:nth-child(2){
-		float: right;
-		width: 49%;
-	}
+
 	.bottom_menu{
 		width: 100%;
 	}
@@ -162,6 +146,9 @@
 	}
 	.suppliers-slider .next{
 		right: 0;
+	}
+	.our_suppliers{
+		margin-top: 10px;
 	}
 }
 
@@ -245,6 +232,20 @@
 	}
 	.item-container{
 		padding-right: 0;
+	}
+	.screen-review .all_review,
+	.screen-news .all_review{
+		right: 0;
+	}
+	.screen-review .col-xs-6{
+		width: 100%;
+	}
+	.screen-news .col-xs-6{
+		width: 100%;
+	}
+	.owl-item img{
+		max-width: 100%;
+		height: auto;
 	}
 
 }
