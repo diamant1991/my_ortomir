@@ -1,0 +1,659 @@
+<!doctype html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+	<title>main</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="keywords" content="" >
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" href="lib/owl.carousel/owl.carousel.css">
+	<link rel="stylesheet" href="lib/jquery.bxslider/jquery.bxslider.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+	<script src="js/modernizr-2.8.3.min.js"></script>	
+</head>
+<body>
+
+<div class="main-slider hidden-xs">
+	<ul class="bxslider slider-bx">
+	   <li>
+	   	<div class="main-slider-img" style="background-image: url(images/banner.jpg)"></div>
+	   </li>
+	   <li>
+	   	<div class="main-slider-img" style="background-image: url(images/banner.jpg)"></div>
+	   </li>
+	   <li>
+	   	<div class="main-slider-img" style="background-image: url(images/banner.jpg)"></div>
+	   </li>
+	</ul>
+</div>
+
+<header class="header">
+	<div class="container">
+		<div class="row">
+			<div class="top-panel">
+				<nav class="navbar navbar-default">
+					  <div class="container-fluid">
+					    <div class="row">
+					    	<div class="navbar-header">
+					    	  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					    	    <span>Меню</span>
+					    	  </button>
+					    	</div>
+					    	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					    	  <ul class="nav navbar-nav">
+					    	     <li class="active"><a href="#">главная</a></li>
+					    	     <li><a href="#">оплата</a></li>
+					    	     <li><a href="#">доставка</a></li>
+					    	     <li><a href="#">гарантия</a></li>
+					    	     <li><a href="#">сотрудничество</a></li>
+					    	     <li><a href="#">Сертификаты</a></li>
+					    	     <li><a href="#">Полезная информация </a></li>
+					    	     <li><a href="#">Контакты</a></li>
+					    	  </ul>
+					    	</div><!-- /.navbar-collapse -->
+					    	<div class="cabinet-link">
+					    		<p class="city visible-xs">выбор города</p>
+								<a href="#" class="cab">личный кабинет</a>
+								<div class="basket visible-sm visible-xs">
+									<a href="">Товаров нет</a>
+								</div>
+							</div>
+					    </div>
+					  </div><!-- /.container-fluid -->
+					</nav>
+			</div>
+			<div class="bottom-panel clearfix">
+				<div class="logo">
+					<a href="#"><img src="images/logo.png" height="86" width="218" alt=""></a>
+				</div>
+				<div class="header_right">
+					<p class="city hidden-xs">выбор города</p>
+					<p class="grafik hidden-xs">ПН-ПТ с 9:00 до 18:00</p>
+					<div class="phone">
+						<a href="#">заказать звонок</a>
+						<p>(843)123-45-67 </p>
+					</div>
+					<div class="basket hidden-sm hidden-xs">
+						<a href=""><span class="basket-title">корзина</span> Товаров нет</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</header><!-- header -->
+
+<div class="main-content mobile-content visible-xs">
+	<div class="container">
+		<div class="row">
+			<div class="top_content">
+				<nav class="menu">
+					<div class="dropdown">
+					   <button id="dLabel" class="catalog-toogle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					    каталог товара
+					  </button>
+					  <ul class="dropdown-menu catalog-dropdown" aria-labelledby="dLabel">
+					  		<li>
+					  			<a href="#">New Balance 574 Pique Polo</a>
+					  		</li>
+					  		<li><a href="#">Balance 530 90's Running</a></li>
+					  		<li><a href="#">New Balance 574 Pique Polo</a></li>
+					  		<li><a href="#">Balance 530 90's Running</a></li>
+					  </ul>
+					</div>
+				</nav>
+				<div class="search">
+					<form>
+						<input type="text" placeholder="Поиск" class="in-search">
+						<input type="submit" value="" class="s-search">
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<section class="mobile-slider visible-xs">
+	<div class="container">
+		<div class="row">
+			<ul class="bxslider mobile-bx">
+			   <li>
+			   	<div class="mobile-slider-img" style="background-image: url(images/mobile-img.jpg)"></div>
+			   </li>
+			   <li>
+			   	<div class="mobile-slider-img" style="background-image: url(images/mobile-img.jpg)"></div>
+			   </li>
+			   <li>
+			   	<div class="mobile-slider-img" style="background-image: url(images/mobile-img.jpg)"></div>
+			   </li>
+			</ul>
+		</div>
+	</div>
+</section>
+
+<section class="big-search hidden-xs">
+	<div class="container">
+		<div class="row">
+			<div class="big-search-block">
+				<h1><img src="images/24.png" alt=""></h1>
+				<div class="home_search">
+					<form>
+						<input type="image" src="images/search.png">
+						<input type="text" placeholder="ПОИСК">
+					</form>
+				</div>
+				<a href="" class="catalog-link">Каталог</a>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="home_content home_catalog">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-9 col-sm-8">
+				<div class="row">
+					<div class="home_left">
+						<h2>Каталог</h2>
+						<div class="items catalog clearfix">
+							<div class="col-lg-3 col-md-4 col-xs-6">
+								<div class="row">
+									<div class="item-container">
+										<div class="item-block">
+											<div class="item-img">
+												<div class="block-vertical">
+													<img src="images/product.jpg" height="168" width="168" alt="">
+												</div>
+											</div>
+											<div class="item-content">
+												<div class="catalog_title">
+													<div class="block-vertical">Cтетоскоп <br>Кардиологический <br>Littman</div>
+												</div>
+												<div class="visible-collapse">
+													<div class="choice-block">
+														<div class="choice-color">
+															<div class="color" class="owl-carousel owl-theme">
+																  <div class="item">
+																  		<img src="images/color1.jpg" height="18" width="18" alt="">
+																  </div>
+																  <div class="item">
+																  		<img src="images/color2.jpg" height="18" width="18" alt="">
+																  </div>
+																  <div class="item">
+																  		<img src="images/color3.jpg" height="18" width="18" alt="">
+																  </div>
+																  <div class="item">
+																  		<img src="images/color1.jpg" height="18" width="18" alt="">
+																  </div>
+																  <div class="item">
+																  		<img src="images/color2.jpg" height="18" width="18" alt="">
+																  </div>
+																  <div class="item">
+																  		<img src="images/color3.jpg" height="18" width="18" alt="">
+																  </div>
+															</div>
+															<div class="customNavigation">
+																 <a class="prev-btn">
+																 	<img src="images/color-prev.png" height="11" width="10" alt="">
+																 </a>
+																 <a class="next-btn">
+																 	<img src="images/color-next.png" height="11" width="10" alt="">
+																 </a>
+															</div>
+														</div>
+													</div>
+													<p class="old_price">10 580 <span class="rub">c</span></p>
+													<p class="price">9 580 <span class="rub">c</span></p>
+												
+													<div class="input">
+														<span class="minus"></span>
+														<input type="text" value="1">
+														<span class="plus"></span>
+													</div>
+												</div>
+												<div class="add-basket">
+													<div class="add-basket-block">
+														<a href="#" class="basket-link">в корзину</a>
+														<a href="#" class="compare">сравнить</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-4 col-xs-6">
+								<div class="row">
+									<div class="item-container">
+										<div class="item-block">
+											<div class="item-img">
+												<div class="block-vertical">
+													<img src="images/product.jpg" height="168" width="168" alt="">
+												</div>
+											</div>
+											<div class="item-content">
+												<div class="catalog_title">
+													<div class="block-vertical">Cтетоскоп <br>Кардиологический <br>Littman</div>
+												</div>
+												<div class="visible-collapse">
+													<div class="choice-block">
+														<div class="choice-color">
+															<div class="color" class="owl-carousel owl-theme">
+																  <div class="item">
+																  		<img src="images/color1.jpg" height="18" width="18" alt="">
+																  </div>
+																  <div class="item">
+																  		<img src="images/color2.jpg" height="18" width="18" alt="">
+																  </div>
+																  <div class="item">
+																  		<img src="images/color3.jpg" height="18" width="18" alt="">
+																  </div>
+																  <div class="item">
+																  		<img src="images/color1.jpg" height="18" width="18" alt="">
+																  </div>
+																  <div class="item">
+																  		<img src="images/color2.jpg" height="18" width="18" alt="">
+																  </div>
+																  <div class="item">
+																  		<img src="images/color3.jpg" height="18" width="18" alt="">
+																  </div>
+															</div>
+															<div class="customNavigation">
+																 <a class="prev-btn">
+																 	<img src="images/color-prev.png" height="11" width="10" alt="">
+																 </a>
+																 <a class="next-btn">
+																 	<img src="images/color-next.png" height="11" width="10" alt="">
+																 </a>
+															</div>
+														</div>
+													</div>
+													<p class="old_price">10 580 <span class="rub">c</span></p>
+													<p class="price">9 580 <span class="rub">c</span></p>
+												
+													<div class="input">
+														<span class="minus"></span>
+														<input type="text" value="1">
+														<span class="plus"></span>
+													</div>
+												</div>
+												<div class="add-basket">
+													<div class="add-basket-block">
+														<a href="#" class="basket-link">в корзину</a>
+														<a href="#" class="compare">сравнить</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-4 hidden-sm hidden-xs">
+								<div class="row">
+									<div class="item-container">
+										<div class="item-block">
+											<div class="item-img">
+												<div class="block-vertical">
+													<img src="images/product.jpg" height="168" width="168" alt="">
+												</div>
+											</div>
+											<div class="item-content">
+												<div class="catalog_title">
+													<div class="block-vertical">Cтетоскоп <br>Кардиологический <br>Littman</div>
+												</div>
+												<div class="visible-collapse">
+													<div class="choice-block">
+														<div class="choice-color">
+															<div class="color" class="owl-carousel owl-theme">
+																  <div class="item">
+																  		<img src="images/color1.jpg" height="18" width="18" alt="">
+																  </div>
+																  <div class="item">
+																  		<img src="images/color2.jpg" height="18" width="18" alt="">
+																  </div>
+																  <div class="item">
+																  		<img src="images/color3.jpg" height="18" width="18" alt="">
+																  </div>
+																  <div class="item">
+																  		<img src="images/color1.jpg" height="18" width="18" alt="">
+																  </div>
+																  <div class="item">
+																  		<img src="images/color2.jpg" height="18" width="18" alt="">
+																  </div>
+																  <div class="item">
+																  		<img src="images/color3.jpg" height="18" width="18" alt="">
+																  </div>
+															</div>
+															<div class="customNavigation">
+																 <a class="prev-btn">
+																 	<img src="images/color-prev.png" height="11" width="10" alt="">
+																 </a>
+																 <a class="next-btn">
+																 	<img src="images/color-next.png" height="11" width="10" alt="">
+																 </a>
+															</div>
+														</div>
+													</div>
+													<p class="old_price">10 580 <span class="rub">c</span></p>
+													<p class="price">9 580 <span class="rub">c</span></p>
+												
+													<div class="input">
+														<span class="minus"></span>
+														<input type="text" value="1">
+														<span class="plus"></span>
+													</div>
+												</div>
+												<div class="add-basket">
+													<div class="add-basket-block">
+														<a href="#" class="basket-link">в корзину</a>
+														<a href="#" class="compare">сравнить</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-3 hidden-md hidden-sm hidden-xs">
+								<div class="row">
+									<div class="item-container">
+										<div class="item-block">
+											<div class="item-img">
+												<div class="block-vertical">
+													<img src="images/product.jpg" height="168" width="168" alt="">
+												</div>
+											</div>
+											<div class="item-content">
+												<div class="catalog_title">
+													<div class="block-vertical">Cтетоскоп <br>Кардиологический <br>Littman</div>
+												</div>
+												<div class="visible-collapse">
+													<div class="choice-block">
+														<div class="choice-color">
+															<div class="color" class="owl-carousel owl-theme">
+																  <div class="item">
+																  		<img src="images/color1.jpg" height="18" width="18" alt="">
+																  </div>
+																  <div class="item">
+																  		<img src="images/color2.jpg" height="18" width="18" alt="">
+																  </div>
+																  <div class="item">
+																  		<img src="images/color3.jpg" height="18" width="18" alt="">
+																  </div>
+																  <div class="item">
+																  		<img src="images/color1.jpg" height="18" width="18" alt="">
+																  </div>
+																  <div class="item">
+																  		<img src="images/color2.jpg" height="18" width="18" alt="">
+																  </div>
+																  <div class="item">
+																  		<img src="images/color3.jpg" height="18" width="18" alt="">
+																  </div>
+															</div>
+															<div class="customNavigation">
+																 <a class="prev-btn">
+																 	<img src="images/color-prev.png" height="11" width="10" alt="">
+																 </a>
+																 <a class="next-btn">
+																 	<img src="images/color-next.png" height="11" width="10" alt="">
+																 </a>
+															</div>
+														</div>
+													</div>
+													<p class="old_price">10 580 <span class="rub">c</span></p>
+													<p class="price">9 580 <span class="rub">c</span></p>
+												
+													<div class="input">
+														<span class="minus"></span>
+														<input type="text" value="1">
+														<span class="plus"></span>
+													</div>
+												</div>
+												<div class="add-basket">
+													<div class="add-basket-block">
+														<a href="#" class="basket-link">в корзину</a>
+														<a href="#" class="compare">сравнить</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-4">
+				<div class="row">
+					<div class="home_right">
+						<h2 class="main-h2">Отзывы</h2>
+						<div class="reviews">
+							<div class="review">
+								<p>Ортопедия традиционно связана с разделом клинической медицины, изучающим повре- ждения опорно- двигательного </p>
+								<span>Иванов Аркадий, студент<br>12 августа 2015</span>
+							</div>
+							<div class="review">
+								<p>Ортопедия традиционно связана с разделом клинической медицины, изучающим повре- ждения опорно- двигательного </p>
+								<span>Иванов Аркадий, студент<br>12 августа 2015</span>
+							</div>
+							<a href="#" class="all_review">все отзывы</a>
+							<div class="clear"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="second_content">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-9 col-sm-8">
+				<div class="row">
+					<div class="why-we">
+						<h2 class="main-h2">Почему мы</h2>
+						<div class="why-we-container clearfix">
+							<div class="col-md-2 col-xs-4">
+								<div class="row">
+									<div class="why-we-block">
+										<div class="why-icon icon1"></div>
+										<div class="title">Низкие цены</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-2 col-xs-4">
+								<div class="row">
+									<div class="why-we-block">
+										<div class="why-icon icon2"></div>
+										<div class="title">Только проверенный товар</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-2 col-xs-4">
+								<div class="row">
+									<div class="why-we-block">
+										<div class="why-icon icon3"></div>
+										<div class="title">Доставка товара</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-2 col-xs-4">
+								<div class="row">
+									<div class="why-we-block">
+										<div class="why-icon icon4"></div>
+										<div class="title">Индивидуальный подход к каждому клиенту</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-2 col-xs-4">
+								<div class="row">
+									<div class="why-we-block">
+										<div class="why-icon icon5"></div>
+										<div class="title">Широкий ассортимент товаров</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-2 col-xs-4">
+								<div class="row">
+									<div class="why-we-block">
+										<div class="why-icon icon6"></div>
+										<div class="title">Акции и скидки, постоянным клиентам</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="text-container">
+							<p>Ортопедия традиционно связана с разделом клинической медицины, изучающим повреждения опорно-двигательного аппарата (костей, суставов, мышц, связок, сухожилий), — с травматологией. Имманентно в состав ортопедии и травматологии входит протезирование — комплексная медико-техническая дисциплина, которая занимается изготовлением и применением протезов и ортезов (корсетов, бандажей, аппаратов, специальной обуви и стелек) для восстановления утраченных форм и функций опорно-двигательной системы[источник не указан 978 дней].</p>
+							<p>
+								Ортопедия традиционно связана с разделом клинической медицины, изучающим повреждения опорно-двигательного аппарата (костей, суставов, мышц, связок, сухожилий), — с травматологией. Имманентно в состав ортопедии и травматологии входит протезирование — комплексная медико-техническая дисциплина, которая занимается изготовлением и применением протезов и ортезов (корсетов, бандажей, аппаратов, специальной обуви и стелек) для восстановления утраченных форм и функций опорно-двигательной системы[источник не указан 978 дней].
+							</p>
+						</div>
+						<div class="our_suppliers">
+							<h2 class="main-h2">Наши поставщики</h2>
+							<div class="suppliers-slider">
+								<div id="suppliers" class="owl-carousel owl-theme">
+								   <div class="item">
+								   	<img src="images/intel.png" height="93" width="93" alt="">
+								   </div>
+								   <div class="item">
+								   	<img src="images/intel.png" height="93" width="93" alt="">
+								   </div>
+								   <div class="item">
+								   	<img src="images/intel.png" height="93" width="93" alt="">
+								   </div>
+								   <div class="item">
+								   	<img src="images/intel.png" height="93" width="93" alt="">
+								   </div>
+								   <div class="item">
+								   	<img src="images/intel.png" height="93" width="93" alt="">
+								   </div>
+								   <div class="item">
+								   	<img src="images/intel.png" height="93" width="93" alt="">
+								   </div>
+								   <div class="item">
+								   	<img src="images/intel.png" height="93" width="93" alt="">
+								   </div>
+								   <div class="item">
+								   	<img src="images/intel.png" height="93" width="93" alt="">
+								   </div>
+								   <div class="item">
+								   	<img src="images/intel.png" height="93" width="93" alt="">
+								   </div>
+								   <div class="item">
+								   	<img src="images/intel.png" height="93" width="93" alt="">
+								   </div>
+								</div>
+								<div class="customNavigation">
+								   <a class="prev" id="prev-suppliers">
+								   	<img src="images/left.png" height="49" width="27" alt="">
+								   </a>
+								   <a class="next" id="next-suppliers">
+								   	<img src="images/right.png" height="49" width="27" alt="">
+								   </a>
+								</div>
+							</div>
+						</div>
+						<div class="up-block hidden-xs">
+							<a href="#" class="up-btn">наверх</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-4">
+				<div class="row">
+					<div class="news-container">
+						<h2 class="main-h2">Новости</h2>
+						<div class="news">
+							<div class="new">
+								<a href="#">Существуют многие узкие специализации</a>
+								<p>Ортопедия традиционно связана с разделом клинической медицины, изучающим повре- ждения опорно- двигательного </p>
+								<span class="date">12 марта 2015</span>
+							</div>
+							<div class="new">
+								<a href="#">Существуют многие узкие специализации</a>
+								<p>Ортопедия традиционно связана с разделом клинической медицины, изучающим повре- ждения опорно- двигательного </p>
+								<span class="date">12 марта 2015</span>
+							</div>
+							<a href="#" class="all_review">Все новости</a>
+							<div class="clear"></div>
+							<div class="soc">
+								<img src="images/soc.png" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<div class="mobile-links visible-xs">
+	<div class="container">
+		<div class="row">
+			<a href="#" class="mobile-up">наверх</a>
+			<a href="#" class="mobile-cat-link">каталог</a>
+		</div>
+	</div>
+</div>
+
+<footer class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="bottom_menu">
+				<ul>
+					<li><a class="active" href="">Главная</a></li>
+					<li><a href="">Оплата</a></li>
+					<li><a href="">Доставка</a></li>
+					<li><a href="">Гарантия</a></li>
+					<li><a href="">Сотрудничество</a></li>
+					<li><a href="">Сертификаты</a></li>
+					<li><a href="">Полезная информация</a></li>
+					<li><a href="">Контакты</a></li>
+				</ul>
+			</div>
+			<div class="bottom_link hidden-xs">
+				<a href="">КаТАЛОГ</a>
+			</div>
+			<div class="clear"></div>
+			<div class="copy hidden-xs">All rights reserved 2015</div>
+			<div class="payment">
+				<img src="images/payment.png" alt="">
+			</div>
+			<div class="copy visible-xs">All rights reserved 2015</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+</footer>
+
+
+
+<script src="js/jquery.js"></script>
+<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="lib/owl.carousel/owl.carousel.min.js"></script>
+<script src="lib/jquery.bxslider/jquery.bxslider.min.js"></script>
+<script src="js/carousel.js"></script>
+<script>
+	$('.slider-bx').bxSlider({
+	  mode: 'fade',
+	  captions: false,
+	  controls: false
+	});
+	$('.mobile-bx').bxSlider({
+	  mode: 'fade',
+	  captions: false,
+	  controls: false
+	});
+</script>
+<script src="js/script.js"></script>
+</body>
+</html>

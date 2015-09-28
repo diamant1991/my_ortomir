@@ -1,0 +1,72 @@
+@font-face {
+    font-family: 'OpenSansBold';
+    src: url('../fonts/OpenSansBold.eot');
+    src: url('../fonts/OpenSansBold.eot') format('embedded-opentype'),
+         url('../fonts/OpenSansBold.woff2') format('woff2'),
+         url('../fonts/OpenSansBold.woff') format('woff'),
+         url('../fonts/OpenSansBold.ttf') format('truetype'),
+         url('../fonts/OpenSansBold.svg#OpenSansBold') format('svg');
+}
+@font-face {
+    font-family: 'MyriadPro';
+    src: url('../fonts/MyriadPro.eot');
+    src: url('../fonts/MyriadPro.eot') format('embedded-opentype'),
+         url('../fonts/MyriadPro.woff2') format('woff2'),
+         url('../fonts/MyriadPro.woff') format('woff'),
+         url('../fonts/MyriadPro.ttf') format('truetype'),
+         url('../fonts/MyriadPro.svg#MyriadPro') format('svg');
+}
+@font-face {
+    font-family: 'RobotoMedium';
+    src: url('../fonts/RobotoMedium.eot');
+    src: url('../fonts/RobotoMedium.eot') format('embedded-opentype'),
+         url('../fonts/RobotoMedium.woff2') format('woff2'),
+         url('../fonts/RobotoMedium.woff') format('woff'),
+         url('../fonts/RobotoMedium.ttf') format('truetype'),
+         url('../fonts/RobotoMedium.svg#RobotoMedium') format('svg');
+}
+@font-face {
+    font-family: 'PtSans';
+    src: url('../fonts/PtSans.eot');
+    src: url('../fonts/PtSans.eot') format('embedded-opentype'),
+         url('../fonts/PtSans.woff2') format('woff2'),
+         url('../fonts/PtSans.woff') format('woff'),
+         url('../fonts/PtSans.ttf') format('truetype'),
+         url('../fonts/PtSans.svg#PtSans') format('svg');
+}
+@font-face {
+    font-family: 'rouble';
+    src: url('../fonts/rouble.eot');
+    src: url('../fonts/rouble.eot') format('embedded-opentype'),
+         url('../fonts/rouble.woff2') format('woff2'),
+         url('../fonts/rouble.woff') format('woff'),
+         url('../fonts/rouble.ttf') format('truetype'),
+         url('../fonts/rouble.svg#rouble') format('svg');
+}
+@font-face {
+    font-family: 'OpenSans';
+    src: url('../fonts/OpenSans.eot');
+    src: url('../fonts/OpenSans.eot') format('embedded-opentype'),
+         url('../fonts/OpenSans.woff2') format('woff2'),
+         url('../fonts/OpenSans.woff') format('woff'),
+         url('../fonts/OpenSans.ttf') format('truetype'),
+         url('../fonts/OpenSans.svg#OpenSans') format('svg');
+}
+@font-face {
+    font-family: 'MyriadProSemibold';
+    src: url('../fonts/MyriadProSemibold.eot');
+    src: url('../fonts/MyriadProSemibold.eot') format('embedded-opentype'),
+         url('../fonts/MyriadProSemibold.woff2') format('woff2'),
+         url('../fonts/MyriadProSemibold.woff') format('woff'),
+         url('../fonts/MyriadProSemibold.ttf') format('truetype'),
+         url('../fonts/MyriadProSemibold.svg#MyriadProSemibold') format('svg');
+}
+@font-face {
+    font-family: 'OpenSansItalic';
+    src: url('../fonts/OpenSansItalic.eot');
+    src: url('../fonts/OpenSansItalic.eot') format('embedded-opentype'),
+         url('../fonts/OpenSansItalic.woff2') format('woff2'),
+         url('../fonts/OpenSansItalic.woff') format('woff'),
+         url('../fonts/OpenSansItalic.ttf') format('truetype'),
+         url('../fonts/OpenSansItalic.svg#OpenSansItalic') format('svg');
+}

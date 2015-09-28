@@ -1,0 +1,92 @@
+/* Ion.RangeSlider, Flat UI Skin
+// css version 2.0.3
+// © Denis Ineshin, 2014    https://github.com/IonDen
+// ===================================================================================================================*/
+
+/* =====================================================================================================================
+// Skin details */
+
+.irs-bar,
+.irs-bar-edge,
+.irs-slider {
+    background: url(../img/sprite-skin-flat.png) repeat-x;
+}
+
+.irs {
+    height: 40px;
+    color: #1e1e1e;
+}
+.irs-with-grid {
+    height: 60px;
+}
+.irs-line {
+    height: 5px; 
+    top: 25px;
+    background-color: #fcb800;
+}
+    .irs-line-left {
+        height: 5px;
+    }
+    .irs-line-mid {
+        height: 5px;
+    }
+    .irs-line-right {
+        height: 5px;
+    }
+
+.irs-bar {
+    height: 5px; 
+    top: 25px;
+    background-color: #0099f3;
+}
+    .irs-bar-edge {
+        top: 25px;
+        height: 5px; 
+        width: 9px;
+        background-position: 0 -90px;
+    }
+
+.irs-shadow {
+    height: 3px; top: 34px;
+    background: #000;
+    opacity: 0.25;
+}
+.lt-ie9 .irs-shadow {
+    filter: alpha(opacity=25);
+}
+
+.irs-slider {
+    width: 16px; 
+    height: 16px;
+    top: 20px;
+    background: url(../../images/range.png)no-repeat;
+}
+
+.irs-min, .irs-max {
+    color: #1e1e1e;
+    font-size: 9px; 
+    line-height: 1.333;
+    text-shadow: none;
+    top: 10px; 
+    padding: 1px 3px;
+}
+
+.irs-from, .irs-to, .irs-single {
+    color: #1e1e1e;
+    font-size: 9px; 
+    line-height: 1.333;
+    text-shadow: none;
+    padding: 1px 5px;
+}
+
+
+
+.irs-grid-pol {
+    background: #e1e4e9;
+}
+.irs-grid-text {
+    color: #999;
+}
+
+.irs-disabled {
+}
