@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+	<title>basket2</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="keywords" content="" >
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+	<script src="js/modernizr-2.8.3.min.js"></script>	
+</head>
+<body>
+<header class="header">
+	<div class="container">
+		<div class="row">
+			<div class="top-panel">
+				<nav class="navbar navbar-default">
+					  <div class="container-fluid">
+					    <div class="row">
+					    	<div class="navbar-header">
+					    	  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					    	    <span>Меню</span>
+					    	  </button>
+					    	</div>
+					    	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					    	  <ul class="nav navbar-nav">
+					    	     <li class="active"><a href="#">главная</a></li>
+					    	     <li><a href="#">оплата</a></li>
+					    	     <li><a href="#">доставка</a></li>
+					    	     <li><a href="#">гарантия</a></li>
+					    	     <li><a href="#">сотрудничество</a></li>
+					    	     <li><a href="#">Сертификаты</a></li>
+					    	     <li><a href="#">Полезная информация </a></li>
+					    	     <li><a href="#">Контакты</a></li>
+					    	  </ul>
+					    	</div><!-- /.navbar-collapse -->
+					    	<div class="cabinet-link second-cabinet clearfix">
+					    		<p class="city visible-xs">выбор города</p>
+								<a href="#" class="cab">личный кабинет</a>
+								<a href="#" class="authorization">авторизация</a>
+								<div class="basket visible-sm visible-xs">
+									<a href="">Товаров нет</a>
+								</div>
+							</div>
+					    </div>
+					  </div><!-- /.container-fluid -->
+					</nav>
+			</div>
+			<div class="bottom-panel clearfix">
+				<div class="logo">
+					<a href="#"><img src="images/logo.png" height="86" width="218" alt=""></a>
+				</div>
+				<div class="header_right">
+					<p class="city hidden-xs">выбор города</p>
+					<p class="grafik hidden-xs">ПН-ПТ с 9:00 до 18:00</p>
+					<div class="phone">
+						<a href="#">заказать звонок</a>
+						<p>(843)123-45-67 </p>
+					</div>
+					<div class="basket hidden-sm hidden-xs">
+						<a href=""><span class="basket-title">корзина</span> Товаров нет</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</header><!-- header -->
+
+<div class="main-content">
+	<div class="container">
+		<div class="row">
+			<div class="top_content">
+				<nav class="menu">
+					<div class="dropdown">
+					   <button id="dLabel" class="catalog-toogle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					    каталог товара
+					  </button>
+					  <ul class="dropdown-menu catalog-dropdown" aria-labelledby="dLabel">
+					  		<li>
+					  			<a href="#">New Balance 574 Pique Polo</a>
+					  			<ul class="drop-child">
+					  				<li>
+					  					<a href="#">New Balance 574 Pique Polo</a>
+					  					<ul class="third-level">
+					  						<li><a href="#">Balance 530 90's Running</a></li>
+					  						<li><a href="#">New Balance 574 Pique Polo</a></li>
+					  						<li><a href="#">Balance 530 90's Running</a></li>
+					  					</ul>
+					  				</li>
+					  				<li>
+					  					<a href="#">New Balance 574 Pique Polo</a>
+					  					<ul class="third-level">
+					  						<li><a href="#">Balance 530 90's Running</a></li>
+					  						<li><a href="#">New Balance 574 Pique Polo</a></li>
+					  						<li><a href="#">Balance 530 90's Running</a></li>
+					  					</ul>
+					  				</li>
+					  			</ul>
+					  		</li>
+					  		<li><a href="#">Balance 530 90's Running</a></li>
+					  		<li><a href="#">New Balance 574 Pique Polo</a></li>
+					  		<li><a href="#">Balance 530 90's Running</a></li>
+					  </ul>
+					</div>
+				</nav>
+				<div class="search">
+					<form>
+						<input type="text" placeholder="Поиск" class="in-search">
+						<input type="submit" value="" class="s-search">
+					</form>
+				</div>
+			</div>
+			<div class="breadcrumb-container">
+				<ol class="breadcrumb">
+				   <li><a href="#">Главная</a></li>
+				   <li class="active">Корзина</li>
+				</ol>
+			</div>
+			<div class="get-order-container">
+				<h2 class="main-h2">Корзина</h2>
+				<div class="delivery-service">
+					<div class="basket-container">
+						<table>
+							<thead>
+								<tr>
+									<td></td>
+									<td>название</td>
+									<td>цена</td>
+									<td>количество</td>
+									<td>баллы</td>
+									<td>скидка</td>
+									<td></td>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>
+										<div class="white-block">
+											<div class="white-cell">
+												<div class="basket-img">
+													<img src="images/basket-img.jpg" height="167" width="186" alt="">
+												</div>
+											</div>
+										</div>
+									</td>
+									<td>
+										<div class="white-block">
+											<div class="white-cell">
+												<div class="name">
+													Стетоскоп 3443
+												</div>
+											</div>
+										</div>
+									</td>
+									<td>
+										<div class="white-block">
+											<div class="white-cell">
+												<div class="price">
+													9 580 <span class="rub">c</span>
+												</div>
+											</div>
+										</div>
+									</td>
+									<td>
+										<div class="white-block">
+											<div class="white-cell">
+												<div class="list-item-col">
+													<div class="input">
+														<span class="minus"></span>
+														<input type="text" value="1" readonly="">
+														<span class="plus"></span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</td>
+									<td>
+										<div class="white-block">
+											<div class="white-cell">
+												<div class="balls">12</div>
+											</div>
+										</div>
+									</td>
+									<td>
+										<div class="white-block">
+											<div class="white-cell">
+												<div class="sale-basket"><div class="block-vertical">-10%</div></div>
+											</div>
+										</div>
+									</td>
+									<td>
+										<div class="white-block">
+											<div class="white-cell">
+												<div class="delete">
+													<img src="images/delete.png" height="25" width="24" alt="">
+												</div>
+											</div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div class="white-block">
+											<div class="white-cell">
+												<div class="basket-img">
+													<img src="images/basket-img.jpg" height="167" width="186" alt="">
+												</div>
+											</div>
+										</div>
+									</td>
+									<td>
+										<div class="white-block">
+											<div class="white-cell">
+												<div class="name">
+													Стетоскоп 3443
+												</div>
+											</div>
+										</div>
+									</td>
+									<td>
+										<div class="white-block">
+											<div class="white-cell">
+												<div class="price">
+													9 580 <span class="rub">c</span>
+												</div>
+											</div>
+										</div>
+									</td>
+									<td>
+										<div class="white-block">
+											<div class="white-cell">
+												<div class="list-item-col">
+													<div class="input">
+														<span class="minus"></span>
+														<input type="text" value="1" readonly="">
+														<span class="plus"></span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</td>
+									<td>
+										<div class="white-block">
+											<div class="white-cell">
+												<div class="balls">12</div>
+											</div>
+										</div>
+									</td>
+									<td>
+										<div class="white-block">
+											<div class="white-cell">
+												<div class="sale-basket"><div class="block-vertical">-10%</div></div>
+											</div>
+										</div>
+									</td>
+									<td>
+										<div class="white-block">
+											<div class="white-cell">
+												<div class="delete">
+													<img src="images/delete.png" height="25" width="24" alt="">
+												</div>
+											</div>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<div class="finish-total total-second">
+							<p>Товаров на: 8 900 руб.</p>
+							<p>В том числе НДС: 0 руб.</p>
+							<p>Итого: 8900 руб.</p>
+						</div>
+						<form>
+							<input type="submit" value="оформить заказ" class="get-order-sub">
+						</form>
+						<div class="clear"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<footer class="footer second-footer">
+	<div class="container">
+		<div class="row">
+			<div class="bottom_menu">
+				<ul>
+					<li><a class="active" href="">Главная</a></li>
+					<li><a href="">Оплата</a></li>
+					<li><a href="">Доставка</a></li>
+					<li><a href="">Гарантия</a></li>
+					<li><a href="">Сотрудничество</a></li>
+					<li><a href="">Сертификаты</a></li>
+					<li><a href="">Полезная информация</a></li>
+					<li><a href="">Контакты</a></li>
+				</ul>
+			</div>
+			<div class="bottom_link">
+				<a href="">КаТАЛОГ</a>
+			</div>
+			<div class="clear"></div>
+			<div class="copy">All rights reserved 2015</div>
+			<div class="payment">
+				<img src="images/payment.png" alt="">
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+</footer>
+
+
+<script src="js/jquery.js"></script>
+<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
+<script>
+	$('.radioblock').find('.radio').each(function(){
+	$(this).click(function(){
+		var valueRadio = $(this).html();
+		$(this).parent().find('.radio').removeClass('active');
+		$(this).addClass('active');
+		$(this).parent().find('input').val(valueRadio);
+	});
+});
+</script>
+</body>
+</html>
