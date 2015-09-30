@@ -6,3 +6,10 @@ var delay = 1000;
       }, delay);
     });
   });
+
+
+ $(document).ready(function() {
+ 	$('.mobile-catalog-toogle').click(function() {
+ 		$(this).parent().find('.mobile-cat-drop').toggleClass('active');
+ 	});
+ });

@@ -799,9 +799,6 @@ a:hover {
   margin-bottom: 10px;
   width: 101%;
 }
-.catalog-dropdown > li:hover > ul {
-  display: block;
-}
 .catalog-dropdown > li:hover > a {
   font-family: 'OpenSansBold';
 }
@@ -913,12 +910,6 @@ a:hover {
 }
 .cardio-wrapper {
   margin-top: 30px;
-}
-.cardio-wrapper .col-lg-2 {
-  width: 19%;
-}
-.cardio-wrapper .col-lg-2:nth-child(5n+1) {
-  clear: both;
 }
 .second-footer {
   background-color: #f7f7f7;

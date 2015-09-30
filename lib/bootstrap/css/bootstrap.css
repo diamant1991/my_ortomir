@@ -2248,6 +2248,14 @@ pre code {
   .col-lg-offset-0 {
     margin-left: 0;
   }
+
+  .cardio-lg{
+    width: 19%;
+  }
+  .cardio-lg:nth-child(5n+1){
+    clear: both;
+  }
+
 }
 table {
   background-color: transparent;
@@ -3566,6 +3574,7 @@ tbody.collapse.in {
 .dropup,
 .dropdown {
   position: relative;
+  z-index: 2;
 }
 .dropdown-toggle:focus {
   outline: 0;

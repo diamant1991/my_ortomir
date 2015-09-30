@@ -1,3 +1,9 @@
+@media(min-width: 768px){
+	.catalog-dropdown > .with-drop:hover > ul {
+	  display: block;
+	}
+}
+
 @media(max-width: 991px){
 	.header_right{
 		width:475px;
@@ -150,6 +156,31 @@
 	.our_suppliers{
 		margin-top: 10px;
 	}
+	.catalog-dropdown > li > ul{
+		position: inherit;
+		left: 0;
+		width: 100%;
+		border-radius: 0;
+		box-shadow: none;
+		padding-bottom: 0;
+	}
+	.mobile-cat-drop{
+		display: none;
+		padding-bottom: 5px;
+	}
+	.mobile-cat-drop.active{
+		display: block;
+	}
+	.catalog-dropdown > li > a{
+		display: block;
+		padding-top: 3px;
+		padding-bottom: 3px;
+		padding-left: 20px;
+		text-decoration: none !important;
+	}
+	.catalog-dropdown > li > ul > li > ul > li{
+		margin-top: 15px;
+	}
 }
 
 @media(max-width: 530px){
@@ -179,9 +210,9 @@
 	.catalog-toogle{
 		width: 185px;
 	}
-	.catalog-dropdown{
+	/* .catalog-dropdown{
 		width: 185px;
-	}
+	} */
 	.dropdown-menu > li > a{
 		white-space: inherit;
 	}
@@ -247,5 +278,10 @@
 		max-width: 100%;
 		height: auto;
 	}
-
+	.cardio-wrapper .col-xs-6{
+		width: 100%;
+	}
+	.main-h2{
+		font-size: 30px;
+	}
 }

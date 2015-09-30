@@ -15,6 +15,7 @@
 	<link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
 	<script src="js/modernizr-2.8.3.min.js"></script>	
 </head>
 <body>
@@ -28,10 +29,7 @@
 					    <div class="row">
 					    	<div class="navbar-header">
 					    	  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-					    	    <span class="sr-only">Toggle navigation</span>
-					    	    <span class="icon-bar"></span>
-					    	    <span class="icon-bar"></span>
-					    	    <span class="icon-bar"></span>
+					    	    <span>Меню</span>
 					    	  </button>
 					    	</div>
 					    	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -45,10 +43,14 @@
 					    	     <li><a href="#">Полезная информация </a></li>
 					    	     <li><a href="#">Контакты</a></li>
 					    	  </ul>
-					    		<div class="cabinet-link">
- 									<a href="#">личный кабинет</a>
- 								</div>
 					    	</div><!-- /.navbar-collapse -->
+					    	<div class="cabinet-link">
+					    		<p class="city visible-xs">выбор города</p>
+								<a href="#" class="cab">личный кабинет</a>
+								<div class="basket visible-sm visible-xs">
+									<a href="">Товаров нет</a>
+								</div>
+							</div>
 					    </div>
 					  </div><!-- /.container-fluid -->
 					</nav>
@@ -58,13 +60,13 @@
 					<a href="#"><img src="images/logo.png" height="86" width="218" alt=""></a>
 				</div>
 				<div class="header_right">
-					<p class="city">выбор города</p>
-					<p class="grafik">ПН-ПТ с 9:00 до 18:00</p>
+					<p class="city hidden-xs">выбор города</p>
+					<p class="grafik hidden-xs">ПН-ПТ с 9:00 до 18:00</p>
 					<div class="phone">
 						<a href="#">заказать звонок</a>
 						<p>(843)123-45-67 </p>
 					</div>
-					<div class="basket">
+					<div class="basket hidden-sm hidden-xs">
 						<a href=""><span class="basket-title">корзина</span> Товаров нет</a>
 					</div>
 				</div>
@@ -77,17 +79,51 @@
 	<div class="container">
 		<div class="row">
 			<div class="top_content">
-				<nav class="menu">
+				<nav class="menu hidden-xs">
 					<div class="dropdown">
 					   <button id="dLabel" class="catalog-toogle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 					    каталог товара
 					  </button>
 					  <ul class="dropdown-menu catalog-dropdown" aria-labelledby="dLabel">
-					  		<li>
+					  		<li class="with-drop">
 					  			<a href="#">New Balance 574 Pique Polo</a>
 					  			<ul class="drop-child">
 					  				<li>
 					  					<a href="#">New Balance 574 Pique Polo</a>
+					  					<ul class="third-level">
+					  						<li><a href="#">Balance 530 90's Running</a></li>
+					  						<li><a href="#">New Balance 574 Pique Polo</a></li>
+					  						<li><a href="#">Balance 530 90's Running</a></li>
+					  					</ul>
+					  				</li>
+					  				<li>
+					  					<a href="#">New Balance 574 Pique Polo</a>
+					  					<ul class="third-level">
+					  						<li><a href="#">Balance 530 90's Running</a></li>
+					  						<li><a href="#">New Balance 574 Pique Polo</a></li>
+					  						<li><a href="#">Balance 530 90's Running</a></li>
+					  					</ul>
+					  				</li>
+					  			</ul>
+					  		</li>
+					  		<li><a href="#">Balance 530 90's Running</a></li>
+					  		<li><a href="#">New Balance 574 Pique Polo</a></li>
+					  		<li><a href="#">Balance 530 90's Running</a></li>
+					  </ul>
+					</div>
+				</nav>
+
+				<nav class="menu visible-xs">
+					<div class="dropdown">
+					   <button class="catalog-toogle mobile-catalog-toogle">
+					    каталог товара
+					  </button>
+					  <ul class="catalog-dropdown mobile-cat-drop">
+					  		<li class="with-drop">
+					  			<a data-toggle="collapse" href="#drop-child" aria-expanded="false" aria-controls="collapseExample">New Balance 574 Pique Polo</a>
+					  			<ul class="drop-child collapse" id="drop-child">
+					  				<li>
+					  					<a href="#" >New Balance 574 Pique Polo</a>
 					  					<ul class="third-level">
 					  						<li><a href="#">Balance 530 90's Running</a></li>
 					  						<li><a href="#">New Balance 574 Pique Polo</a></li>
@@ -126,7 +162,7 @@
 			<div class="cardio">
 				<h2 class="main-h2">Кардиологические</h2>
 				<div class="cardio-wrapper clearfix">
-					<div class="col-lg-2">
+					<div class="cardio-lg col-md-3 col-sm-4 col-xs-6">
 						<div class="row">
 							<div class="cardio-item">
 								<a href="#">
@@ -142,7 +178,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-2">
+					<div class="cardio-lg col-md-3 col-sm-4 col-xs-6">
 						<div class="row">
 							<div class="cardio-item">
 								<a href="#">
@@ -158,7 +194,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-2">
+					<div class="cardio-lg col-md-3 col-sm-4 col-xs-6">
 						<div class="row">
 							<div class="cardio-item">
 								<a href="#">
@@ -174,7 +210,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-2">
+					<div class="cardio-lg col-md-3 col-sm-4 col-xs-6">
 						<div class="row">
 							<div class="cardio-item">
 								<a href="#">
@@ -190,7 +226,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-2">
+					<div class="cardio-lg col-md-3 col-sm-4 col-xs-6">
 						<div class="row">
 							<div class="cardio-item">
 								<a href="#">
@@ -206,7 +242,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-2">
+					<div class="cardio-lg col-md-3 col-sm-4 col-xs-6">
 						<div class="row">
 							<div class="cardio-item">
 								<a href="#">
@@ -222,7 +258,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-2">
+					<div class="cardio-lg col-md-3 col-sm-4 col-xs-6">
 						<div class="row">
 							<div class="cardio-item">
 								<a href="#">
@@ -238,7 +274,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-2">
+					<div class="cardio-lg col-md-3 col-sm-4 col-xs-6">
 						<div class="row">
 							<div class="cardio-item">
 								<a href="#">
@@ -254,7 +290,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-2">
+					<div class="cardio-lg col-md-3 col-sm-4 col-xs-6">
 						<div class="row">
 							<div class="cardio-item">
 								<a href="#">
@@ -270,7 +306,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-2">
+					<div class="cardio-lg col-md-3 col-sm-4 col-xs-6">
 						<div class="row">
 							<div class="cardio-item">
 								<a href="#">
@@ -286,7 +322,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-2">
+					<div class="cardio-lg col-md-3 col-sm-4 col-xs-6">
 						<div class="row">
 							<div class="cardio-item">
 								<a href="#">
@@ -302,7 +338,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-2">
+					<div class="cardio-lg col-md-3 col-sm-4 col-xs-6">
 						<div class="row">
 							<div class="cardio-item">
 								<a href="#">
@@ -318,7 +354,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-2">
+					<div class="cardio-lg col-md-3 col-sm-4 col-xs-6">
 						<div class="row">
 							<div class="cardio-item">
 								<a href="#">
@@ -334,7 +370,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-2">
+					<div class="cardio-lg col-md-3 col-sm-4 col-xs-6">
 						<div class="row">
 							<div class="cardio-item">
 								<a href="#">
@@ -350,7 +386,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-2">
+					<div class="cardio-lg col-md-3 col-sm-4 col-xs-6">
 						<div class="row">
 							<div class="cardio-item">
 								<a href="#">
@@ -367,7 +403,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="up-block">
+				<div class="up-block hidden-xs">
 					<a href="#" class="up-btn">наверх</a>
 				</div>
 			</div>
@@ -375,7 +411,17 @@
 	</div>
 </div><!-- main content -->
 
-<footer class="footer second-footer">
+
+<div class="mobile-links visible-xs">
+	<div class="container">
+		<div class="row">
+			<a class="mobile-up">наверх</a>
+			<a href="#" class="mobile-cat-link">каталог</a>
+		</div>
+	</div>
+</div>
+
+<footer class="footer">
 	<div class="container">
 		<div class="row">
 			<div class="bottom_menu">
@@ -390,14 +436,15 @@
 					<li><a href="">Контакты</a></li>
 				</ul>
 			</div>
-			<div class="bottom_link">
+			<div class="bottom_link hidden-xs">
 				<a href="">КаТАЛОГ</a>
 			</div>
 			<div class="clear"></div>
-			<div class="copy">All rights reserved 2015</div>
+			<div class="copy hidden-xs">All rights reserved 2015</div>
 			<div class="payment">
 				<img src="images/payment.png" alt="">
 			</div>
+			<div class="copy visible-xs">All rights reserved 2015</div>
 			<div class="clear"></div>
 		</div>
 	</div>
