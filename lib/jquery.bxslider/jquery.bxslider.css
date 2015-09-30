@@ -1,18 +1,4 @@
-/**
- * BxSlider v4.1.2 - Fully loaded, responsive content slider
- * http://bxslider.com
- *
- * Written by: Steven Wanderski, 2014
- * http://stevenwanderski.com
- * (while drinking Belgian ales and listening to jazz)
- *
- * CEO and founder of bxCreative, LTD
- * http://bxcreative.com
- */
 
-
-/** RESET AND LAYOUT
-===================================*/
 
 .bx-wrapper {
 	position: relative;
@@ -195,4 +181,23 @@
 	display: block;
 	font-size: .85em;
 	padding: 10px;
+}
+
+.tovar-bx img{
+	border: 1px solid rgba(0,0,0,0.28);
+}
+.thumbnail img{
+	width: 99px;
+	height: 90px;
+}
+.thumbnail a{
+	display:block;
+	width: 99px;
+	float: left;
+	height: 90px;
+	margin-left: 8px;
+}
+.thumbnail{
+	margin-left: -8px;
+	margin-top: 10px;
 }
