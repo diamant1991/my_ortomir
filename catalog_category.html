@@ -53,6 +53,7 @@
 									<a href="">Товаров нет</a>
 								</div>
 							</div>
+							
 					    </div>
 					  </div><!-- /.container-fluid -->
 					</nav>
@@ -81,17 +82,51 @@
 	<div class="container">
 		<div class="row">
 			<div class="top_content">
-				<nav class="menu">
+				<nav class="menu hidden-xs">
 					<div class="dropdown">
 					   <button id="dLabel" class="catalog-toogle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 					    каталог товара
 					  </button>
 					  <ul class="dropdown-menu catalog-dropdown" aria-labelledby="dLabel">
-					  		<li>
+					  		<li class="with-drop">
 					  			<a href="#">New Balance 574 Pique Polo</a>
 					  			<ul class="drop-child">
 					  				<li>
 					  					<a href="#">New Balance 574 Pique Polo</a>
+					  					<ul class="third-level">
+					  						<li><a href="#">Balance 530 90's Running</a></li>
+					  						<li><a href="#">New Balance 574 Pique Polo</a></li>
+					  						<li><a href="#">Balance 530 90's Running</a></li>
+					  					</ul>
+					  				</li>
+					  				<li>
+					  					<a href="#">New Balance 574 Pique Polo</a>
+					  					<ul class="third-level">
+					  						<li><a href="#">Balance 530 90's Running</a></li>
+					  						<li><a href="#">New Balance 574 Pique Polo</a></li>
+					  						<li><a href="#">Balance 530 90's Running</a></li>
+					  					</ul>
+					  				</li>
+					  			</ul>
+					  		</li>
+					  		<li><a href="#">Balance 530 90's Running</a></li>
+					  		<li><a href="#">New Balance 574 Pique Polo</a></li>
+					  		<li><a href="#">Balance 530 90's Running</a></li>
+					  </ul>
+					</div>
+				</nav>
+
+				<nav class="menu visible-xs">
+					<div class="dropdown">
+					   <button class="catalog-toogle mobile-catalog-toogle">
+					    каталог товара
+					  </button>
+					  <ul class="catalog-dropdown mobile-cat-drop">
+					  		<li class="with-drop">
+					  			<a data-toggle="collapse" href="#drop-child" aria-expanded="false" aria-controls="collapseExample">New Balance 574 Pique Polo</a>
+					  			<ul class="drop-child collapse" id="drop-child">
+					  				<li>
+					  					<a href="#" >New Balance 574 Pique Polo</a>
 					  					<ul class="third-level">
 					  						<li><a href="#">Balance 530 90's Running</a></li>
 					  						<li><a href="#">New Balance 574 Pique Polo</a></li>
@@ -131,19 +166,83 @@
 
 			<div class="tovar-category">
 				<header class="clearfix">
-					<div class="col-lg-3">
+					<div class="col-md-3 col-sm-4">
 						<div class="row">
-							<h2 class="main-h2">Стетоскопы</h2>
+							<div class="collapse-header">
+								<h2 class="main-h2">Стетоскопы</h2>
+								<a class="all-filter visible-xs" role="button" data-toggle="collapse" href="#filterCollapse" aria-expanded="false" aria-controls="collapseExample">
+								  все фильтры
+								</a>
+							</div>
+							<div class="collapse filter-collapse" id="filterCollapse">
+								<div class="side-filter">
+									<div class="side-filter-block">
+										<div class="price-range">
+											<div class="price-range-block">
+												<div class="title">цена,руб.:</div>
+												<div class="input-price">
+													<span>от</span>
+													<input type="text" id="minCost">
+													<span>до</span>
+													<input type="text" id="maxCost">
+												</div>
+												<input type="text" id="range" name="price-choice" value="">
+											</div>
+										</div>
+										<div class="availability">
+											<div class="title">Наличие в магазинах</div>
+											<div class="radioblock">
+												<div class="radio">во всех магазинах</div>
+												<div class="radio">выбрать</div>
+												<input type="hidden" />
+											</div>
+										</div>
+										<div class="type-cat">
+											<div class="title">тип</div>
+											<ul>
+												<li><a href="#">Balance 530</a></li>
+												<li><a href="#">90's Running</a></li>
+												<li><a href="#">530 90's Running</a></li>
+											</ul>
+										</div>
+										<div class="type-cat">
+											<div class="title">материал</div>
+											<ul>
+												<li><a href="#">Balance 530</a></li>
+												<li><a href="#">90's Running</a></li>
+												<li><a href="#">530 90's Running</a></li>
+											</ul>
+										</div>
+										<div class="manufacturer">
+											<div class="checkboxes">
+												<div class="check">
+													<input type="checkbox" class="checkbox" id="check1">
+													<label for="check1">Производитель 1</label>
+												</div>
+												<div class="check">
+													<input type="checkbox" class="checkbox" id="check2">
+													<label for="check2">Производитель 2</label>
+												</div>
+											</div>
+										</div>
+										<div class="pick-up">
+											<form>
+												<input type="submit" value="подобрать" class="pick-submit">
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
-					<div class="col-lg-9">
+					<div class="col-md-9 col-sm-8">
 						<div class="row">
 							<div class="sort">
 								<span class="sort_button on_name">по названию</span>
 								<span class="sort_button on_price">по цене</span>
-								<p class="display_type">
+								<p class="display_type hidden-xs">
 									<span>Вид каталога</span>
-									<ul class="nav nav-tabs" role="tablist">
+									<ul class="nav nav-tabs hidden-xs" role="tablist">
 									    <li role="presentation" class="active">
 									    	<a href="#grid" aria-controls="grid" role="tab" data-toggle="tab"><img src="images/grid.png" alt=""></a>
 									    </li>
@@ -152,7 +251,7 @@
 									    </li>
 									 </ul>
 								</p>
-								<div class="pagination">
+								<div class="pagination hidden-md hidden-sm hidden-xs">
 									<a href="">Предыдущая</a>
 									<a href="">1</a>
 									<span>2</span>
@@ -162,86 +261,21 @@
 									<a href="">Следующая</a>
 								</div>
 							</div>
-						</div>
-					</div>
-				</header>
-				<div class="category-content clearfix">
-					<div class="col-lg-3">
-						<div class="row">
-							<div class="side-filter">
-								<div class="side-filter-block">
-									<div class="price-range">
-										<div class="price-range-block">
-											<div class="title">цена,руб.:</div>
-											<div class="input-price">
-												<span>от</span>
-												<input type="text" id="minCost">
-												<span>до</span>
-												<input type="text" id="maxCost">
-											</div>
-											<input type="text" id="range" name="price-choice" value="">
-										</div>
-									</div>
-									<div class="availability">
-										<div class="title">Наличие в магазинах</div>
-										<div class="radioblock">
-											<div class="radio">во всех магазинах</div>
-											<div class="radio">выбрать</div>
-											<input type="hidden" />
-										</div>
-									</div>
-									<div class="type-cat">
-										<div class="title">тип</div>
-										<ul>
-											<li><a href="#">Balance 530</a></li>
-											<li><a href="#">90's Running</a></li>
-											<li><a href="#">530 90's Running</a></li>
-										</ul>
-									</div>
-									<div class="type-cat">
-										<div class="title">материал</div>
-										<ul>
-											<li><a href="#">Balance 530</a></li>
-											<li><a href="#">90's Running</a></li>
-											<li><a href="#">530 90's Running</a></li>
-										</ul>
-									</div>
-									<div class="manufacturer">
-										<div class="checkboxes">
-											<div class="check active">
-												Производитель 1
-												<input type="checkbox" value="Производитель 1">
-											</div>
-											<div class="check">
-												Производитель 2
-												<input type="checkbox" value="Производитель 2">
-											</div>
-										</div>
-									</div>
-									<div class="pick-up">
-										<form>
-											<input type="submit" value="подобрать" class="pick-submit">
-										</form>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-9">
-						<div class="row">
-							<div class="tab-content">
-								<div role="tabpanel" class="tab-pane active" id="grid">
+									<div class="tab-content tab-content-items">
+								<div role="tabpanel" class="tab-pane active hidden-xs" id="grid">
 									<div class="items items-cat clearfix">
-										<div class="col-lg-3">
+										<div class="col-lg-3 col-md-4 col-sm-6">
 											<div class="row">
 												<div class="item-container item-cat">
 													<div class="item-block">
-														<div class="item-img">
-															<div class="block-vertical">
-																<img src="images/product.jpg" height="168" width="168" alt="">
-															</div>
-															<div class="discount">
-																<div class="bot-text">-10<span>%</span></div>
+														<div class="item-img-wrapp">
+															<div class="item-img">
+																<div class="block-vertical">
+																	<img src="images/product.jpg" height="168" width="168" alt="">
+																</div>
+																<div class="discount">
+																	<div class="bot-text">-10<span>%</span></div>
+																</div>
 															</div>
 														</div>
 														<div class="item-content">
@@ -301,16 +335,18 @@
 												</div>
 											</div>
 										</div>
-										<div class="col-lg-3">
+										<div class="col-lg-3 col-md-4 col-sm-6">
 											<div class="row">
 												<div class="item-container item-cat">
 													<div class="item-block">
-														<div class="item-img">
-															<div class="block-vertical">
-																<img src="images/product.jpg" height="168" width="168" alt="">
-															</div>
-															<div class="sale">
-																<div class="bot-text">sale</div>
+														<div class="item-img-wrapp">
+															<div class="item-img">
+																<div class="block-vertical">
+																	<img src="images/product.jpg" height="168" width="168" alt="">
+																</div>
+																<div class="sale">
+																	<div class="bot-text">sale</div>
+																</div>
 															</div>
 														</div>
 														<div class="item-content">
@@ -370,16 +406,18 @@
 												</div>
 											</div>
 										</div>
-										<div class="col-lg-3">
+										<div class="col-lg-3 col-md-4 col-sm-6">
 											<div class="row">
 												<div class="item-container item-cat">
 													<div class="item-block">
-														<div class="item-img">
-															<div class="block-vertical">
-																<img src="images/product.jpg" height="168" width="168" alt="">
-															</div>
-															<div class="new-icon">
-																<div class="bot-text">new</div>
+														<div class="item-img-wrapp">
+															<div class="item-img">
+																<div class="block-vertical">
+																	<img src="images/product.jpg" height="168" width="168" alt="">
+																</div>
+																<div class="new-icon">
+																	<div class="bot-text">new</div>
+																</div>
 															</div>
 														</div>
 														<div class="item-content">
@@ -439,16 +477,18 @@
 												</div>
 											</div>
 										</div>
-										<div class="col-lg-3">
+										<div class="col-lg-3 col-md-4 col-sm-6">
 											<div class="row">
 												<div class="item-container item-cat">
 													<div class="item-block">
-														<div class="item-img">
-															<div class="block-vertical">
-																<img src="images/product.jpg" height="168" width="168" alt="">
-															</div>
-															<div class="hit">
-																<div class="bot-text">хит!</div>
+														<div class="item-img-wrapp">
+															<div class="item-img">
+																<div class="block-vertical">
+																	<img src="images/product.jpg" height="168" width="168" alt="">
+																</div>
+																<div class="hit">
+																	<div class="bot-text">хит!</div>
+																</div>
 															</div>
 														</div>
 														<div class="item-content">
@@ -508,13 +548,15 @@
 												</div>
 											</div>
 										</div>
-										<div class="col-lg-3">
+										<div class="col-lg-3 col-md-4 col-sm-6">
 											<div class="row">
 												<div class="item-container item-cat">
 													<div class="item-block">
-														<div class="item-img">
-															<div class="block-vertical">
-																<img src="images/product.jpg" height="168" width="168" alt="">
+														<div class="item-img-wrapp">
+															<div class="item-img">
+																<div class="block-vertical">
+																	<img src="images/product.jpg" height="168" width="168" alt="">
+																</div>
 															</div>
 														</div>
 														<div class="item-content">
@@ -574,13 +616,15 @@
 												</div>
 											</div>
 										</div>
-										<div class="col-lg-3">
+										<div class="col-lg-3 col-md-4 col-sm-6">
 											<div class="row">
 												<div class="item-container item-cat">
 													<div class="item-block">
-														<div class="item-img">
-															<div class="block-vertical">
-																<img src="images/product.jpg" height="168" width="168" alt="">
+														<div class="item-img-wrapp">
+															<div class="item-img">
+																<div class="block-vertical">
+																	<img src="images/product.jpg" height="168" width="168" alt="">
+																</div>
 															</div>
 														</div>
 														<div class="item-content">
@@ -640,13 +684,15 @@
 												</div>
 											</div>
 										</div>
-										<div class="col-lg-3">
+										<div class="col-lg-3 col-md-4 col-sm-6">
 											<div class="row">
 												<div class="item-container item-cat">
 													<div class="item-block">
-														<div class="item-img">
-															<div class="block-vertical">
-																<img src="images/product.jpg" height="168" width="168" alt="">
+														<div class="item-img-wrapp">
+															<div class="item-img">
+																<div class="block-vertical">
+																	<img src="images/product.jpg" height="168" width="168" alt="">
+																</div>
 															</div>
 														</div>
 														<div class="item-content">
@@ -706,13 +752,15 @@
 												</div>
 											</div>
 										</div>
-										<div class="col-lg-3">
+										<div class="col-lg-3 col-md-4 col-sm-6">
 											<div class="row">
 												<div class="item-container item-cat">
 													<div class="item-block">
-														<div class="item-img">
-															<div class="block-vertical">
-																<img src="images/product.jpg" height="168" width="168" alt="">
+														<div class="item-img-wrapp">
+															<div class="item-img">
+																<div class="block-vertical">
+																	<img src="images/product.jpg" height="168" width="168" alt="">
+																</div>
 															</div>
 														</div>
 														<div class="item-content">
@@ -772,13 +820,15 @@
 												</div>
 											</div>
 										</div>
-										<div class="col-lg-3">
+										<div class="col-lg-3 col-md-4 col-sm-6">
 											<div class="row">
 												<div class="item-container item-cat">
 													<div class="item-block">
-														<div class="item-img">
-															<div class="block-vertical">
-																<img src="images/product.jpg" height="168" width="168" alt="">
+														<div class="item-img-wrapp">
+															<div class="item-img">
+																<div class="block-vertical">
+																	<img src="images/product.jpg" height="168" width="168" alt="">
+																</div>
 															</div>
 														</div>
 														<div class="item-content">
@@ -838,13 +888,15 @@
 												</div>
 											</div>
 										</div>
-										<div class="col-lg-3">
+										<div class="col-lg-3 col-md-4 col-sm-6">
 											<div class="row">
 												<div class="item-container item-cat">
 													<div class="item-block">
-														<div class="item-img">
-															<div class="block-vertical">
-																<img src="images/product.jpg" height="168" width="168" alt="">
+														<div class="item-img-wrapp">
+															<div class="item-img">
+																<div class="block-vertical">
+																	<img src="images/product.jpg" height="168" width="168" alt="">
+																</div>
 															</div>
 														</div>
 														<div class="item-content">
@@ -904,13 +956,15 @@
 												</div>
 											</div>
 										</div>
-										<div class="col-lg-3">
+										<div class="col-lg-3 col-md-4 col-sm-6">
 											<div class="row">
 												<div class="item-container item-cat">
 													<div class="item-block">
-														<div class="item-img">
-															<div class="block-vertical">
-																<img src="images/product.jpg" height="168" width="168" alt="">
+														<div class="item-img-wrapp">
+															<div class="item-img">
+																<div class="block-vertical">
+																	<img src="images/product.jpg" height="168" width="168" alt="">
+																</div>
 															</div>
 														</div>
 														<div class="item-content">
@@ -970,13 +1024,15 @@
 												</div>
 											</div>
 										</div>
-										<div class="col-lg-3">
+										<div class="col-lg-3 col-md-4 col-sm-6">
 											<div class="row">
 												<div class="item-container item-cat">
 													<div class="item-block">
-														<div class="item-img">
-															<div class="block-vertical">
-																<img src="images/product.jpg" height="168" width="168" alt="">
+														<div class="item-img-wrapp">
+															<div class="item-img">
+																<div class="block-vertical">
+																	<img src="images/product.jpg" height="168" width="168" alt="">
+																</div>
 															</div>
 														</div>
 														<div class="item-content">
@@ -1036,13 +1092,15 @@
 												</div>
 											</div>
 										</div>
-										<div class="col-lg-3">
+										<div class="col-lg-3 col-md-4 col-sm-6">
 											<div class="row">
 												<div class="item-container item-cat">
 													<div class="item-block">
-														<div class="item-img">
-															<div class="block-vertical">
-																<img src="images/product.jpg" height="168" width="168" alt="">
+														<div class="item-img-wrapp">
+															<div class="item-img">
+																<div class="block-vertical">
+																	<img src="images/product.jpg" height="168" width="168" alt="">
+																</div>
 															</div>
 														</div>
 														<div class="item-content">
@@ -1102,13 +1160,15 @@
 												</div>
 											</div>
 										</div>
-										<div class="col-lg-3">
+										<div class="col-lg-3 col-md-4 col-sm-6">
 											<div class="row">
 												<div class="item-container item-cat">
 													<div class="item-block">
-														<div class="item-img">
-															<div class="block-vertical">
-																<img src="images/product.jpg" height="168" width="168" alt="">
+														<div class="item-img-wrapp">
+															<div class="item-img">
+																<div class="block-vertical">
+																	<img src="images/product.jpg" height="168" width="168" alt="">
+																</div>
 															</div>
 														</div>
 														<div class="item-content">
@@ -1168,13 +1228,15 @@
 												</div>
 											</div>
 										</div>
-										<div class="col-lg-3">
+										<div class="col-lg-3 col-md-4 col-sm-6">
 											<div class="row">
 												<div class="item-container item-cat">
 													<div class="item-block">
-														<div class="item-img">
-															<div class="block-vertical">
-																<img src="images/product.jpg" height="168" width="168" alt="">
+														<div class="item-img-wrapp">
+															<div class="item-img">
+																<div class="block-vertical">
+																	<img src="images/product.jpg" height="168" width="168" alt="">
+																</div>
 															</div>
 														</div>
 														<div class="item-content">
@@ -1234,13 +1296,15 @@
 												</div>
 											</div>
 										</div>
-										<div class="col-lg-3">
+										<div class="col-lg-3 col-md-4 col-sm-6">
 											<div class="row">
 												<div class="item-container item-cat">
 													<div class="item-block">
-														<div class="item-img">
-															<div class="block-vertical">
-																<img src="images/product.jpg" height="168" width="168" alt="">
+														<div class="item-img-wrapp">
+															<div class="item-img">
+																<div class="block-vertical">
+																	<img src="images/product.jpg" height="168" width="168" alt="">
+																</div>
 															</div>
 														</div>
 														<div class="item-content">
@@ -1318,13 +1382,15 @@
 								<div role="tabpanel" class="tab-pane" id="list">
 									<div class="list-item-view">
 										<div class="list-item-container">
-											<div class="list-item-img">
-												<div class="block-vertical">
-													<img src="images/list-item.jpg" height="86" width="105" alt="">
+											<div class="list-item-top">
+												<div class="list-item-img">
+													<div class="block-vertical">
+														<img src="images/list-item.jpg" height="86" width="105" alt="">
+													</div>
 												</div>
-											</div>
-											<div class="list-description">
-												Cтетоскоп Кардиологический Littman Cтетоскоп Кардиологический Littman
+												<div class="list-description">
+													Cтетоскоп Кардиологический Littman Cтетоскоп Кардиологический Littman
+												</div>
 											</div>
 											<div class="variant-item clearfix">
 												<div class="block-vertical">
@@ -1332,7 +1398,7 @@
 														<p class="old_price">10 580 <span class="rub">c</span></p>
 														<p class="price">9 580 <span class="rub">c</span></p>
 													</div>
-													<div class="list-item-col">
+													<div class="list-item-col hidden-md">
 														<div class="input">
 															<span class="minus"></span>
 															<input type="text" value="1" readonly="">
@@ -1346,13 +1412,15 @@
 											</div>
 										</div>
 										<div class="list-item-container">
-											<div class="list-item-img">
-												<div class="block-vertical">
-													<img src="images/list-item.jpg" height="86" width="105" alt="">
+											<div class="list-item-top">
+												<div class="list-item-img">
+													<div class="block-vertical">
+														<img src="images/list-item.jpg" height="86" width="105" alt="">
+													</div>
 												</div>
-											</div>
-											<div class="list-description">
-												Cтетоскоп Кардиологический Littman Cтетоскоп Кардиологический Littman
+												<div class="list-description">
+													Cтетоскоп Кардиологический Littman Cтетоскоп Кардиологический Littman
+												</div>
 											</div>
 											<div class="variant-item clearfix">
 												<div class="block-vertical">
@@ -1360,7 +1428,7 @@
 														<p class="old_price">10 580 <span class="rub">c</span></p>
 														<p class="price">9 580 <span class="rub">c</span></p>
 													</div>
-													<div class="list-item-col">
+													<div class="list-item-col hidden-md">
 														<div class="input">
 															<span class="minus"></span>
 															<input type="text" value="1" readonly="">
@@ -1374,13 +1442,15 @@
 											</div>
 										</div>
 										<div class="list-item-container">
-											<div class="list-item-img">
-												<div class="block-vertical">
-													<img src="images/list-item.jpg" height="86" width="105" alt="">
+											<div class="list-item-top">
+												<div class="list-item-img">
+													<div class="block-vertical">
+														<img src="images/list-item.jpg" height="86" width="105" alt="">
+													</div>
 												</div>
-											</div>
-											<div class="list-description">
-												Cтетоскоп Кардиологический Littman Cтетоскоп Кардиологический Littman
+												<div class="list-description">
+													Cтетоскоп Кардиологический Littman Cтетоскоп Кардиологический Littman
+												</div>
 											</div>
 											<div class="variant-item clearfix">
 												<div class="block-vertical">
@@ -1388,7 +1458,7 @@
 														<p class="old_price">10 580 <span class="rub">c</span></p>
 														<p class="price">9 580 <span class="rub">c</span></p>
 													</div>
-													<div class="list-item-col">
+													<div class="list-item-col hidden-md">
 														<div class="input">
 															<span class="minus"></span>
 															<input type="text" value="1" readonly="">
@@ -1402,13 +1472,15 @@
 											</div>
 										</div>
 										<div class="list-item-container">
-											<div class="list-item-img">
-												<div class="block-vertical">
-													<img src="images/list-item.jpg" height="86" width="105" alt="">
+											<div class="list-item-top">
+												<div class="list-item-img">
+													<div class="block-vertical">
+														<img src="images/list-item.jpg" height="86" width="105" alt="">
+													</div>
 												</div>
-											</div>
-											<div class="list-description">
-												Cтетоскоп Кардиологический Littman Cтетоскоп Кардиологический Littman
+												<div class="list-description">
+													Cтетоскоп Кардиологический Littman Cтетоскоп Кардиологический Littman
+												</div>
 											</div>
 											<div class="variant-item clearfix">
 												<div class="block-vertical">
@@ -1416,7 +1488,7 @@
 														<p class="old_price">10 580 <span class="rub">c</span></p>
 														<p class="price">9 580 <span class="rub">c</span></p>
 													</div>
-													<div class="list-item-col">
+													<div class="list-item-col hidden-md">
 														<div class="input">
 															<span class="minus"></span>
 															<input type="text" value="1" readonly="">
@@ -1430,13 +1502,15 @@
 											</div>
 										</div>
 										<div class="list-item-container">
-											<div class="list-item-img">
-												<div class="block-vertical">
-													<img src="images/list-item.jpg" height="86" width="105" alt="">
+											<div class="list-item-top">
+												<div class="list-item-img">
+													<div class="block-vertical">
+														<img src="images/list-item.jpg" height="86" width="105" alt="">
+													</div>
 												</div>
-											</div>
-											<div class="list-description">
-												Cтетоскоп Кардиологический Littman Cтетоскоп Кардиологический Littman
+												<div class="list-description">
+													Cтетоскоп Кардиологический Littman Cтетоскоп Кардиологический Littman
+												</div>
 											</div>
 											<div class="variant-item clearfix">
 												<div class="block-vertical">
@@ -1444,7 +1518,7 @@
 														<p class="old_price">10 580 <span class="rub">c</span></p>
 														<p class="price">9 580 <span class="rub">c</span></p>
 													</div>
-													<div class="list-item-col">
+													<div class="list-item-col hidden-md">
 														<div class="input">
 															<span class="minus"></span>
 															<input type="text" value="1" readonly="">
@@ -1470,26 +1544,32 @@
 											<div class="clear"></div>
 										</div>
 									</div>
+
+								</div>
+								<div class="news-banner">
+									<div class="banner-text">	Совет директоров «Аэрофлота» 3 сентября рассмотрит вопрос о возможной санации авиакомпании «Трансаэро». Об этом пишет «Интерфакс» со ссылкой на свой источник, принимавший участие в заседании межведомственной комиссии. При этом сумма сделки составит 1 рубль. <br>Как говорится в сообщении, сделка проводится «в интересах дальнейшего развития гражданской авиации и создания одной из 
+									</div>
 								</div>
 							</div>
-							
 
-							
-
-							<div class="news-banner">
-								Совет директоров «Аэрофлота» 3 сентября рассмотрит вопрос о возможной санации авиакомпании «Трансаэро». Об этом пишет «Интерфакс» со ссылкой на свой источник, принимавший участие в заседании межведомственной комиссии. При этом сумма сделки составит 1 рубль. <br>
- Как говорится в сообщении, сделка проводится «в интересах дальнейшего развития гражданской авиации и создания одной из 
-							</div>
 						</div>
 					</div>
-				</div>
+				</header>
 			</div><!-- tovar category -->
 		</div>
 	</div>
 </div>
 
+<div class="mobile-links visible-xs">
+	<div class="container">
+		<div class="row">
+			<a class="mobile-up">наверх</a>
+			<a href="#" class="mobile-cat-link">каталог</a>
+		</div>
+	</div>
+</div>
 
-<footer class="footer second-footer">
+<footer class="footer">
 	<div class="container">
 		<div class="row">
 			<div class="bottom_menu">
@@ -1504,14 +1584,15 @@
 					<li><a href="">Контакты</a></li>
 				</ul>
 			</div>
-			<div class="bottom_link">
+			<div class="bottom_link hidden-xs">
 				<a href="">КаТАЛОГ</a>
 			</div>
 			<div class="clear"></div>
-			<div class="copy">All rights reserved 2015</div>
+			<div class="copy hidden-xs">All rights reserved 2015</div>
 			<div class="payment">
 				<img src="images/payment.png" alt="">
 			</div>
+			<div class="copy visible-xs">All rights reserved 2015</div>
 			<div class="clear"></div>
 		</div>
 	</div>
@@ -1599,16 +1680,5 @@ $('.radioblock').find('.radio').each(function(){
 	});
 });
 
-// Checkbox
-$('.checkboxes').find('.check').click(function(){
-	if( $(this).find('input').is(':checked') ) {
-		$(this).removeClass('active');
-		$(this).find('input').removeAttr('checked');
-
-	} else {
-		$(this).addClass('active');
-		$(this).find('input').attr('checked', true);
-	}
-});
 </script>
 </body>

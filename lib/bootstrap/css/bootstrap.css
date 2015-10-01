@@ -3574,7 +3574,7 @@ tbody.collapse.in {
 .dropup,
 .dropdown {
   position: relative;
-  z-index: 2;
+  z-index: 3;
 }
 .dropdown-toggle:focus {
   outline: 0;
@@ -4240,6 +4240,9 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     height: auto !important;
     padding-bottom: 0;
     overflow: visible !important;
+  }
+  .filter-collapse.collapse{
+    display: block !important;
   }
   .navbar-collapse.in {
     overflow-y: visible;

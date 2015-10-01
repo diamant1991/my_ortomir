@@ -330,6 +330,9 @@ a:hover {
   top: auto;
   bottom: 10px;
 }
+.item-block .item-img-wrapp {
+  overflow: hidden;
+}
 .item-block .item-img {
   width: 100%;
   display: table;
@@ -338,7 +341,6 @@ a:hover {
   border: 1px solid #d5d5d5;
   background-color: white;
   position: relative;
-  overflow: hidden;
 }
 .item-block .item-img img {
   max-width: 100%;
@@ -358,7 +360,7 @@ a:hover {
   padding-left: 15px;
   padding-right: 15px;
   position: relative;
-  z-index: 2;
+  z-index: 3;
 }
 .item-block .old_price {
   color: #9b9b9b;
@@ -942,7 +944,7 @@ a:hover {
 }
 .sort {
   padding-left: 10px;
-  padding-top: 43px;
+  padding-top: 18px;
 }
 .sort_button {
   background: url('../images/up.png') no-repeat right center;
@@ -976,6 +978,10 @@ a:hover {
 }
 .side-filter {
   padding-right: 20px;
+  margin-top: 35px;
+}
+.tab-content-items {
+  margin-top: 32px;
 }
 .side-filter-block {
   background-color: white;
@@ -1048,8 +1054,6 @@ a:hover {
   text-decoration: underline;
 }
 .check {
-  background: url(../images/check.png) no-repeat 0 1px;
-  padding-left: 30px;
   cursor: pointer;
   position: relative;
   color: #272727;
@@ -1058,11 +1062,39 @@ a:hover {
   margin-bottom: 15px;
   padding-bottom: 3px;
 }
-.check input[type=checkbox] {
-  position: absolute;
-  left: -10000px;
+.check label {
+  font-weight: 400;
 }
-.check.active {
+.checkbox {
+  vertical-align: top;
+  margin: 0 3px 0 0;
+  width: 20px;
+  height: 18px;
+  display: inline-block;
+}
+.checkbox + label {
+  cursor: pointer;
+}
+.checkbox:not(checked) {
+  position: absolute;
+  opacity: 0;
+}
+.checkbox:not(checked) + label {
+  position: relative;
+  padding: 0 0 0 30px;
+  font-family: 'OpenSans';
+  font-size: 13px;
+}
+.checkbox:not(checked) + label:before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 20px;
+  height: 18px;
+  background: url(../images/check.png) no-repeat;
+}
+.checkbox:checked + label:before {
   background: url(../images/check-active.png) no-repeat;
 }
 .manufacturer {
@@ -1087,7 +1119,7 @@ a:hover {
   letter-spacing: 2px;
 }
 .category-content {
-  margin-top: 35px;
+  margin-top: 25px;
 }
 .item-cat {
   padding-left: 15px;
@@ -1191,6 +1223,7 @@ a:hover {
 }
 .show-more {
   margin-top: 25px;
+  padding-left: 15px;
 }
 .show-more .pagination {
   float: right;
@@ -1215,6 +1248,9 @@ a:hover {
   margin: auto;
 }
 .news-banner {
+  padding-left: 15px;
+}
+.banner-text {
   border: 1px solid rgba(0, 0, 0, 0.15);
   background-color: white;
   padding: 20px 35px;
@@ -1612,6 +1648,7 @@ a:hover {
   height: 32px;
   display: block;
   text-align: center;
+  padding-left: 0;
   line-height: 28px;
   border: 2px solid #70b93b;
   color: #70b93b;
@@ -2059,4 +2096,20 @@ a:hover {
 }
 .detail-wrapper {
   padding-bottom: 25px;
+}
+.all-filter {
+  text-transform: uppercase;
+  color: #353535 !important;
+  font-size: 18px;
+  font-family: 'OpenSansBold';
+  background: url(../images/navbar.png) no-repeat 99% 4px;
+  width: 160px;
+  text-decoration: none !important;
+  position: absolute;
+  top: 38px;
+  right: 0;
+  z-index: 2;
+}
+.collapse-header {
+  position: relative;
 }
