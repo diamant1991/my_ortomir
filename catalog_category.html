@@ -83,7 +83,7 @@
 		<div class="row">
 			<div class="top_content">
 				<nav class="menu hidden-xs">
-					<div class="dropdown">
+					<div class="dropdown catalog-drop">
 					   <button id="dLabel" class="catalog-toogle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 					    каталог товара
 					  </button>
@@ -229,6 +229,14 @@
 											<form>
 												<input type="submit" value="подобрать" class="pick-submit">
 											</form>
+										</div>
+									</div><!-- side filter block -->
+									<div class="banners-container visible-lg">
+										<div class="banners-img">
+											<img src="images/left_banner1.jpg" height="130" width="231" alt="">
+										</div>
+										<div class="banners-img">
+											<img src="images/left_banner2.jpg" height="130" width="231" alt="">
 										</div>
 									</div>
 								</div>
@@ -1563,7 +1571,6 @@
 <div class="mobile-links visible-xs">
 	<div class="container">
 		<div class="row">
-			<a class="mobile-up">наверх</a>
 			<a href="#" class="mobile-cat-link">каталог</a>
 		</div>
 	</div>
@@ -1598,87 +1605,14 @@
 	</div>
 </footer>
 
+<a class="up_btn"></a>
 
 <script src="js/jquery.js"></script>
 <script src="lib/bootstrap/js/bootstrap.min.js"></script>
 <script src="lib/owl.carousel/owl.carousel.min.js"></script>
 <script src="lib/ion.rangeSlider/ion.rangeSlider.js"></script>
 <script src="js/carousel.js"></script>
+<script src="js/catalog-category.js"></script>
+<script src="js/radio.js"></script>
 <script src="js/script.js"></script>
-<script>
-var $range = $("#range"),
-    $from = $("#minCost"),
-    $to = $("#maxCost"),
-    range,
-    min = 0,
-    max = 30000,
-    from,
-    to;
-
-var updateValues = function () {
-    $from.prop("value", from);
-    $to.prop("value", to);
-};
-
-$range.ionRangeSlider({
-    type: "double",
-    min: min,
-    max: max,
-    grid: false,
-    grid_num: 10,
-    onChange: function (data) {
-        from = data.from;
-        to = data.to;
-        
-        updateValues();
-    }
-});
-
-range = $range.data("ionRangeSlider");
-
-var updateRange = function () {
-    range.update({
-        from: from,
-        to: to
-    });
-};
-
-$from.on("change", function () {
-    from = +$(this).prop("value");
-    if (from < min) {
-        from = min;
-    }
-    if (from > to) {
-        from = to;
-    }
-
-    updateValues();    
-    updateRange();
-});
-
-$to.on("change", function () {
-    to = +$(this).prop("value");
-    if (to > max) {
-        to = max;
-    }
-    if (to < from) {
-        to = from;
-    }
-
-    updateValues();    
-    updateRange();
-});
-</script>
-<script>
-//radio
-$('.radioblock').find('.radio').each(function(){
-	$(this).click(function(){
-		var valueRadio = $(this).html();
-		$(this).parent().find('.radio').removeClass('active');
-		$(this).addClass('active');
-		$(this).parent().find('input').val(valueRadio);
-	});
-});
-
-</script>
 </body>

@@ -61,7 +61,7 @@ a:hover {
   height: 185px;
   background: rgba(255, 255, 255, 0.73);
   position: relative;
-  z-index: 2;
+  z-index: 3;
 }
 .navbar {
   font-family: 'OpenSansBold';
@@ -440,6 +440,12 @@ a:hover {
   font-family: 'MyriadPro';
   letter-spacing: 2px;
   margin-bottom: 15px;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.basket-link:hover {
+  background-color: #004b96;
 }
 .compare {
   display: inline-block;
@@ -520,6 +526,13 @@ a:hover {
   line-height: 22px;
   letter-spacing: 2px;
   margin-top: 5px;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.all_review:hover {
+  background-color: #535353;
+  color: white;
 }
 .catalog {
   margin-top: 33px;
@@ -591,6 +604,9 @@ a:hover {
   font-family: 'OpenSansBold';
   text-decoration: none;
   text-transform: uppercase;
+}
+.new a:hover {
+  text-decoration: underline;
 }
 .new p {
   font-size: 12px;
@@ -704,6 +720,12 @@ a:hover {
   font-size: 11px;
   color: #353535;
   font-family: 'OpenSansBold';
+  padding-bottom: 5px;
+  border-bottom: 2px solid transparent;
+}
+.bottom_menu ul li a.active,
+.bottom_menu ul li a:hover {
+  border-color: #70b93b;
 }
 .bottom_menu {
   float: left;
@@ -727,6 +749,13 @@ a:hover {
   width: 157px;
   height: 40px;
   line-height: 37px;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.bottom_link a:hover {
+  background-color: #566574;
+  color: white;
 }
 .mobile-cat-link {
   font-size: 14px;
@@ -839,15 +868,28 @@ a:hover {
   font-family: 'OpenSansBold';
 }
 .catalog-dropdown > li > ul > li > ul > li {
-  margin-top: 20px;
+  margin-top: 15px;
 }
 .catalog-dropdown > li > ul > li > ul > li > a {
-  color: #a0a0a0;
+  color: #666666;
   font-size: 12px;
   font-family: 'OpenSans';
 }
 .catalog-dropdown > li > ul > li > ul > li > a:hover {
   color: #95d959;
+}
+.catalog-dropdown .with-drop > a {
+  position: relative;
+}
+.catalog-dropdown .with-drop > a:after {
+  content: '›';
+  font-size: 20px;
+  color: black;
+  position: absolute;
+  right: 10px;
+  top: -5px;
+  z-index: 3;
+  font-family: 'OpenSans' !important;
 }
 .s-search {
   border: 0;
@@ -869,6 +911,13 @@ a:hover {
   padding-left: 15px;
   font-family: 'MyriadPro';
   font-size: 14px;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.in-search:hover,
+.in-search:focus {
+  border-color: #fcb800;
 }
 .top_content {
   position: relative;
@@ -905,6 +954,9 @@ a:hover {
 .cardio-item .title a {
   color: #0064c9;
   letter-spacing: 1px;
+}
+.cardio-item .title a:hover {
+  text-decoration: underline;
 }
 .cardio-item {
   padding-right: 10px;
@@ -1117,6 +1169,12 @@ a:hover {
   font-size: 14px;
   color: white;
   letter-spacing: 2px;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.pick-submit:hover {
+  background: #004b96;
 }
 .category-content {
   margin-top: 25px;
@@ -1246,6 +1304,12 @@ a:hover {
   font-size: 14px;
   letter-spacing: 2px;
   margin: auto;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.show-link:hover {
+  background: #004b96;
 }
 .news-banner {
   padding-left: 15px;
@@ -1622,6 +1686,12 @@ a:hover {
   font-family: 'MyriadPro';
   float: right;
   margin: 40px 0;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.get-order-sub:hover {
+  background-color: #004b96;
 }
 .main-news-block {
   margin-bottom: 50px;
@@ -1897,6 +1967,12 @@ a:hover {
   font-family: 'MyriadPro';
   font-weight: 400;
   margin-top: 18px;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.detail-buy-link:hover {
+  background-color: #004b96;
 }
 .detail-cost {
   margin-top: 15px;
@@ -2112,4 +2188,108 @@ a:hover {
 }
 .collapse-header {
   position: relative;
+}
+.tovar-images .discount {
+  right: -25px;
+  top: -35px;
+  padding-bottom: 18px;
+  padding-left: 13px;
+}
+.tovar-images {
+  position: relative;
+  overflow: hidden;
+}
+.tovar-images .bx-wrapper img {
+  width: 100%;
+  height: auto;
+}
+.catalog-drop:hover .dropdown-menu {
+  display: block;
+}
+.up_btn {
+  position: fixed;
+  bottom: 65px;
+  right: 25px;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  z-index: 10;
+  display: none;
+  background: url('../images/up_btn.png') no-repeat 0 0;
+}
+.up_btn:hover {
+  background: url('../images/up_btn.png') no-repeat 0 -40px;
+}
+.banners-img {
+  margin: 20px 0;
+}
+.banners-img img {
+  width: 100%;
+  height: auto;
+}
+.author-drop {
+  background-color: #eeeeee;
+  width: 255px;
+  height: 195px;
+  border: 0;
+  right: 0;
+  left: auto;
+  z-index: 5;
+  padding: 23px;
+  -webkit-box-shadow: 1px 3px 4px 0px rgba(0, 0, 0, 0.17);
+  -moz-box-shadow: 1px 3px 4px 0px rgba(0, 0, 0, 0.17);
+  box-shadow: 1px 3px 4px 0px rgba(0, 0, 0, 0.17);
+}
+.author-drop input[type="text"],
+.author-drop input[type="password"] {
+  width: 100%;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.38);
+  outline: 0;
+  background-color: transparent;
+  padding-left: 10px;
+  text-transform: uppercase;
+  font-family: 'OpenSansBold';
+  color: #505050;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+.author-drop .author-block {
+  margin-bottom: 12px;
+}
+.author-drop .forgot-block {
+  text-align: center;
+  font-family: 'OpenSansBold';
+}
+.author-drop .forgot-block a {
+  font-size: 10px;
+  text-transform: uppercase;
+  color: #006bb6;
+  letter-spacing: 1px;
+}
+.author-drop .forgot-block a:hover {
+  text-decoration: underline;
+}
+.enter-submit {
+  display: block;
+  width: 145px;
+  height: 35px;
+  margin: auto;
+  border: 0;
+  outline: 0;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: 'MyriadProSemibold';
+  background-color: #0064c9;
+  font-size: 14px;
+  color: white;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.enter-submit:hover {
+  background-color: #004b96;
 }

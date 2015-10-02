@@ -95,14 +95,66 @@
 	<div class="container">
 		<div class="row">
 			<div class="top_content">
-				<nav class="menu">
-					<div class="dropdown">
+				<nav class="menu hidden-xs">
+					<div class="dropdown catalog-drop">
 					   <button id="dLabel" class="catalog-toogle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 					    каталог товара
 					  </button>
 					  <ul class="dropdown-menu catalog-dropdown" aria-labelledby="dLabel">
-					  		<li>
+					  		<li class="with-drop">
 					  			<a href="#">New Balance 574 Pique Polo</a>
+					  			<ul class="drop-child">
+					  				<li>
+					  					<a href="#">New Balance 574 Pique Polo</a>
+					  					<ul class="third-level">
+					  						<li><a href="#">Balance 530 90's Running</a></li>
+					  						<li><a href="#">New Balance 574 Pique Polo</a></li>
+					  						<li><a href="#">Balance 530 90's Running</a></li>
+					  					</ul>
+					  				</li>
+					  				<li>
+					  					<a href="#">New Balance 574 Pique Polo</a>
+					  					<ul class="third-level">
+					  						<li><a href="#">Balance 530 90's Running</a></li>
+					  						<li><a href="#">New Balance 574 Pique Polo</a></li>
+					  						<li><a href="#">Balance 530 90's Running</a></li>
+					  					</ul>
+					  				</li>
+					  			</ul>
+					  		</li>
+					  		<li><a href="#">Balance 530 90's Running</a></li>
+					  		<li><a href="#">New Balance 574 Pique Polo</a></li>
+					  		<li><a href="#">Balance 530 90's Running</a></li>
+					  </ul>
+					</div>
+				</nav>
+
+				<nav class="menu visible-xs">
+					<div class="dropdown">
+					   <button class="catalog-toogle mobile-catalog-toogle">
+					    каталог товара
+					  </button>
+					  <ul class="catalog-dropdown mobile-cat-drop">
+					  		<li class="with-drop">
+					  			<a data-toggle="collapse" href="#drop-child" aria-expanded="false" aria-controls="collapseExample">New Balance 574 Pique Polo</a>
+					  			<ul class="drop-child collapse" id="drop-child">
+					  				<li>
+					  					<a href="#" >New Balance 574 Pique Polo</a>
+					  					<ul class="third-level">
+					  						<li><a href="#">Balance 530 90's Running</a></li>
+					  						<li><a href="#">New Balance 574 Pique Polo</a></li>
+					  						<li><a href="#">Balance 530 90's Running</a></li>
+					  					</ul>
+					  				</li>
+					  				<li>
+					  					<a href="#">New Balance 574 Pique Polo</a>
+					  					<ul class="third-level">
+					  						<li><a href="#">Balance 530 90's Running</a></li>
+					  						<li><a href="#">New Balance 574 Pique Polo</a></li>
+					  						<li><a href="#">Balance 530 90's Running</a></li>
+					  					</ul>
+					  				</li>
+					  			</ul>
 					  		</li>
 					  		<li><a href="#">Balance 530 90's Running</a></li>
 					  		<li><a href="#">New Balance 574 Pique Polo</a></li>
@@ -636,9 +688,6 @@
 						<div class="text-container visible-xs">
 							<p>Ортопедия традиционно связана с разделом клинической медицины, изучающим повреждения опорно-двигательного аппарата (костей, суставов, мышц, связок, сухожилий), — с травматологией. Имманентно в состав ортопедии и травматологии входит протезирование — комплексная медико-техническая дисциплина, которая занимается изготовлением и применением протезов и ортезов (корсетов, бандажей, аппаратов, специальной обуви и стелек) для восстановления утраченных форм и функций опорно-двигательной системы[источник не указан 978 дней].</p>
 						</div>
-						<div class="up-block hidden-xs">
-							<a class="up-btn">наверх</a>
-						</div>
 					</div>
 				</div>
 			</div>
@@ -673,7 +722,6 @@
 <div class="mobile-links visible-xs">
 	<div class="container">
 		<div class="row">
-			<a class="mobile-up">наверх</a>
 			<a href="#" class="mobile-cat-link">каталог</a>
 		</div>
 	</div>
@@ -708,6 +756,7 @@
 	</div>
 </footer>
 
+<a class="up_btn"></a>
 
 
 <script src="js/jquery.js"></script>

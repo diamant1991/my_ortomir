@@ -45,13 +45,32 @@
 					    	     <li><a href="#">Контакты</a></li>
 					    	  </ul>
 					    	</div><!-- /.navbar-collapse -->
-					    	<div class="cabinet-link second-cabinet clearfix">
-					    		<p class="city visible-xs">выбор города</p>
+					    	<div class="cabinet-link second-cabinet third-cabinet clearfix">
 								<a href="#" class="cab">личный кабинет</a>
-								<a href="#" class="authorization">авторизация</a>
+								<a class="authorization" id="author" data-target="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">авторизация</a>
+								<div class="clear"></div>
+								<p class="city visible-xs">выбор города</p>
 								<div class="basket visible-sm visible-xs">
 									<a href="">Товаров нет</a>
 								</div>
+								<div class="dropdown-menu author-drop" aria-labelledby="author">
+							   	<form>
+							   		<fieldset>
+							   			<div class="author-block">
+							   				<input type="text" placeholder="логин">
+							   			</div>
+							   			<div class="author-block">
+							   				<input type="password" placeholder="пароль">
+							   			</div>
+							   			<div class="author-block forgot-block">
+							   				<a href="#">Забыли пароль?</a>
+							   			</div>
+							   			<div class="author-block">	
+							   				<input type="submit" value="войти" class="enter-submit"> 
+							   			</div>
+							   		</fieldset>
+							   	</form>
+							  </div>
 							</div>
 					    </div>
 					  </div><!-- /.container-fluid -->
@@ -82,7 +101,7 @@
 		<div class="row">
 			<div class="top_content">
 				<nav class="menu hidden-xs">
-					<div class="dropdown">
+					<div class="dropdown catalog-drop">
 					   <button id="dLabel" class="catalog-toogle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 					    каталог товара
 					  </button>
@@ -163,7 +182,7 @@
 				</ol>
 			</div>
 			<div class="detail-wrapper clearfix">
-				<div class="col-lg-3">
+				<div class="col-lg-3 visible-lg">
 					<div class="row">
 						<div class="catalog-menu">
 							<div class="menu-block">
@@ -202,16 +221,21 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-9">
+				<div class="col-lg-9 col-xs-12">
 					<div class="row">
 						<div class="tovar-detail">
 							<h2 class="main-h2">Стетоскоп 3443</h2>
 							<div class="tovar-slides clearfix">
-								<div class="col-lg-6">
+								<div class="col-md-6">
 									<div class="row">
 										<div class="tovar-images">
+											<div class="discount">
+												<div class="bot-text">-10%</div>
+											</div>
 											<ul class="bxslider tovar-bx">
-											  <li><img src="images/tovar-img.jpg" height="399" width="453"></li>
+											  <li>
+											 	  <img src="images/tovar-img.jpg" height="399" width="453">
+											  </li>
 											  <li><img src="images/tovar-img.jpg" height="399" width="453"></li>
 											  <li><img src="images/tovar-img.jpg" height="399" width="453"></li>
 											  <li><img src="images/tovar-img.jpg" height="399" width="453"></li>
@@ -225,7 +249,7 @@
 										</div>
 									</div>
 								</div>
-								<div class="col-lg-6">
+								<div class="col-md-6">
 									<div class="row">
 										<div class="tovar-description">
 											<div class="text">
@@ -313,7 +337,7 @@
 												<!-- color slides -->
 
 												<div class="detail-cost clearfix">
-													<div class="col-lg-4">
+													<div class="col-xs-4">
 														<div class="row">
 															<div class="detail-price">
 																<p class="last-price">10 580 <span class="rub">c</span></p>
@@ -321,7 +345,7 @@
 															</div>
 														</div>
 													</div>
-													<div class="col-lg-4">
+													<div class="col-xs-4">
 														<div class="row">
 															<div class="input">
 																<span class="minus"></span>
@@ -330,7 +354,7 @@
 															</div>
 														</div>
 													</div>
-													<div class="col-lg-4">
+													<div class="col-xs-4">
 														<div class="row">
 															<a href="#" class="detail-buy-link">купить</a>
 														</div>
@@ -358,6 +382,7 @@
 							  <ul class="nav nav-tabs tovar-tabs-block" role="tablist">
 							      <li role="presentation"><a href="#info" aria-controls="home" role="tab" data-toggle="tab">Описание</a></li>
 							       <li role="presentation" class="active"><a href="#review" aria-controls="profile" role="tab" data-toggle="tab">Отзывы</a></li>
+							       <li role="presentation"><a href="#delivery" aria-controls="profile" role="tab" data-toggle="tab">Доставка</a></li>
 							  </ul>
 
 							  <div class="tab-content tab-content-tovar">
@@ -389,6 +414,7 @@
 							    		</form>
 							    	</div>
 							    </div>
+							    <div role="tabpanel" class="tab-pane" id="delivery">...</div>
 							  </div>
 							</div>
 							<!-- tovar tabs -->
@@ -396,7 +422,7 @@
 							<div class="accompanying">
 								<h5>сопутствующие товары</h5>
 								<div class="accompanying-container clearfix">
-									<div class="col-lg-3 col-sm-4 col-xs-6 col-530">
+									<div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 col-530">
 										<div class="row">
 											<div class="item-container">
 												<div class="item-block">
@@ -462,7 +488,7 @@
 											</div>
 										</div>
 									</div>
-									<div class="col-lg-3 col-sm-4 col-xs-6 my-hidden">
+									<div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 my-hidden">
 										<div class="row">
 											<div class="item-container">
 												<div class="item-block">
@@ -528,7 +554,7 @@
 											</div>
 										</div>
 									</div>
-									<div class="col-lg-3 col-sm-4 hidden-xs">
+									<div class="col-lg-3 col-md-3 col-sm-4 hidden-xs">
 										<div class="row">
 											<div class="item-container">
 												<div class="item-block">
@@ -594,7 +620,7 @@
 											</div>
 										</div>
 									</div>
-									<div class="col-lg-3 hidden-md hidden-sm hidden-xs">
+									<div class="col-lg-3 col-md-3 hidden-sm hidden-xs">
 										<div class="row">
 											<div class="item-container">
 												<div class="item-block">
@@ -671,7 +697,15 @@
 	</div>
 </div>
 
-<footer class="footer second-footer">
+<div class="mobile-links visible-xs">
+	<div class="container">
+		<div class="row">
+			<a href="#" class="mobile-cat-link">каталог</a>
+		</div>
+	</div>
+</div>
+
+<footer class="footer">
 	<div class="container">
 		<div class="row">
 			<div class="bottom_menu">
@@ -700,7 +734,7 @@
 	</div>
 </footer>
 
-
+<a class="up_btn"></a>
 
 <script src="js/jquery.js"></script>
 <script src="lib/bootstrap/js/bootstrap.min.js"></script>

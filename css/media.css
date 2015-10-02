@@ -34,6 +34,18 @@
 }
 
 @media(max-width: 991px){
+	.author-drop{
+		top:55%;
+	}
+	.tovar-images .thumbnail{
+		display: none;
+	}
+	.tovar-images{
+		width: 70%;
+	}
+	.tovar-description .text{
+		margin-top: 20px;
+	}
 	.second-cabinet .authorization{
 		position: relative;
 		top: 8px;
@@ -253,6 +265,7 @@
 	.basket-container .basket-img{
 		width: 100px;
 		height: 85px;
+		display: none;
 	}
 	.order-input{
 		padding-left: 0;
@@ -264,12 +277,6 @@
 	}
 	.order-input input[type="text"]{
 		width: 100%;
-	}
-}
-
-@media(max-width: 530px){
-	.basket-container .basket-img{
-		display: none;
 	}
 	.basket-container .name{
 		font-size: 15px;
@@ -283,11 +290,86 @@
 	.basket-container table tbody td:first-child{
 		width: auto;
 	}
-	.basket-container .input{
+	.list-item-col .input .minus{
 		display: none;
+	}
+	.list-item-col .input .plus{
+		display: none;
+	}
+	.basket-container .input{
+		top: 0;
+	}
+	.basket-container table thead td{
+		font-size: 9px;
+	}
+	.basket-container .balls{
+		font-size: 16px;
+	}
+	.main-news-block .title{
+		font-size: 20px;
+	}
+	.catalog-dropdown .with-drop > a:after{
+		right: 15px;
+		top: -3px;
+		-webkit-transform: rotate(90deg);
+		   -moz-transform: rotate(90deg);
+		    -ms-transform: rotate(90deg);
+		     -o-transform: rotate(90deg);
+		        transform: rotate(90deg);
+		
+	}
+}
+
+@media(max-width: 530px){
+	.author-drop{
+		top:70%;
+		left:0;
+		right: auto;
+	}
+	.tovar-tabs-block > li > a{
+		font-size: 12px;
+		padding: 5px 15px;
+	}
+	.tovar-images{
+		width: 100%;
+	}
+	.one-click{
+		margin-bottom: 10px;
+	}
+	.detail-cost .col-xs-4{
+		width: 100%;
+	}
+	.detail-cost .input{
+		margin-top: 10px;
+	}
+	.get-review input[type="text"],
+	.get-review textarea{
+		width: 100%;
+	}
+	.list-item-col .input input[type="text"]{
+		width: 20px;
+		height: 25px;
 	}
 	.second-basket thead td:nth-child(4) span{
 		display: none;
+	}
+	.second-basket .input{
+		display: none;
+	}
+	.basket-container .sale-basket{
+		width: 30px;
+		height: 30px;
+		font-size: 12px;
+	}
+	.basket-container .price{
+		font-size: 16px;
+	}
+	.basket-container .delete img{
+		width: 17px;
+		height: 16px;
+	}
+	.basket-container .name{
+		font-size: 13px;
 	}
 	.all-filter{
 		position: relative;

@@ -1,6 +1,11 @@
-var delay = 1000;
+var top_show = 450;
+  var delay = 1000;
   $(document).ready(function() {
-    $('.up-btn,.mobile-up').click(function () {
+    $(window).scroll(function () { 
+      if ($(this).scrollTop() > top_show) $('.up_btn').fadeIn();
+      else $('.up_btn').fadeOut();
+    });
+    $('.up_btn').click(function () { 
       $('body, html').animate({
         scrollTop: 0
       }, delay);
@@ -13,3 +18,4 @@ var delay = 1000;
  		$(this).parent().find('.mobile-cat-drop').toggleClass('active');
  	});
  });
+
