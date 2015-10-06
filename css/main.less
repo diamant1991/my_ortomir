@@ -33,6 +33,7 @@ a{
 	        transition: all 0.2s linear;
 }
 
+
 .main-slider-img{
 	width: 100%;
 	height: 582px;
@@ -304,7 +305,7 @@ a{
 .item-block{
 	background-color: #fff;
 	text-align: center;
-	height: 370px;
+	height: 375px;
 
 		 .input{
 			display: none;
@@ -325,15 +326,7 @@ a{
 		&:hover .item-content{
 			background-color: #fcb800;
 		}
-		&:hover .visible-collapse{
-			padding-bottom: 50px;
-			padding-top: 20px;
-			height:145px;
-		}
-		&:hover .choice-block{
-			top: auto;
-			bottom: 10px;
-		}
+
 		.item-img-wrapp{
 			overflow: hidden;
 		}
@@ -386,7 +379,7 @@ a{
 		}
 }
 .choice-color{
-	width: 80px;
+	width: 100px;
 	margin: auto;
 	position: relative;
 
@@ -394,15 +387,28 @@ a{
 			position: absolute;
 			z-index: 2;
 			left: -17px;
-			top:0;
+			top:1px;
 			cursor:pointer;
+			color:#ccc;
+
+				&:hover{
+					color: #0064c9;
+				}
 		}
 		.next-btn{
 			position: absolute;
 			z-index: 2;
-			right: -10px;
-			top:0;
+			right: -16px;
+			top:1px;
 			cursor:pointer;
+			color:#ccc;
+
+				&:hover{
+					color: #0064c9;
+				}
+		}
+		.item img{
+			border: 1px solid #ccc;
 		}
 }
  .input span {
@@ -807,7 +813,7 @@ a{
 	font-size:12px;
 	color:#353535;
 	font-family:'OpenSans';
-	margin-top: 26px;
+	margin-top: 15px;
 }
 .payment {
 	float:right;
@@ -1437,6 +1443,10 @@ a{
 	border: 1px solid rgba(0,0,0,0.15);
 	padding-left: 150px;
 	padding-right: 390px;
+
+		.choice-color{
+			margin: 10px auto;
+		}
 }
 .list-item-img{
 	position: absolute;
@@ -1498,6 +1508,11 @@ a{
 			-webkit-border-radius: 3px;
 				-moz-border-radius: 3px;
 					  border-radius: 3px;
+			.transition;
+
+				&:hover{
+					background-color: darken(#0064c9, 10%);
+				}
 		}
 }
 .list-item-col{
@@ -1633,6 +1648,9 @@ a{
 						}
 						&:first-child{
 							width: 185px;
+						}
+						&:nth-child(2){
+							width: 28%;
 						}
 				}
 				thead td{
@@ -1937,15 +1955,25 @@ a{
 			position: absolute;
 			z-index: 2;
 			left: 0;
-			top: 3px;
+			top: 5px;
 			cursor: pointer;
+			color: #ccc;
+
+				&:hover{
+					color: #0064c9;
+				}
 		}
 		.next-btn{
 			position: absolute;
 			z-index: 2;
 			right: 0;
-			top: 3px;
+			top: 5px;
 			cursor: pointer;
+			color: #ccc;
+
+				&:hover{
+					color: #0064c9;
+				}
 		}
 }
 .tovar-description{
@@ -1997,11 +2025,11 @@ a{
 
 			.prev-btn{
 				left:0;
-				top: 4px;
+				top: 6px;
 			}
 			.next-btn{
 				right: 0;
-				top: 4px;
+				top: 6px;
 			}
 	}
 }
@@ -2028,11 +2056,6 @@ a{
 	color: #fff;
 	font-family: 'PtSans';
 	padding: 5px;
-	-webkit-transform: rotate(25deg);
-	   -moz-transform: rotate(25deg);
-	    -ms-transform: rotate(25deg);
-	     -o-transform: rotate(25deg);
-	        transform: rotate(25deg);
 
 		span{
 			font-family: 'PTSansBold';
@@ -2409,4 +2432,9 @@ a{
 		&:hover{
 			background-color: darken(#0064c9, 10%);
 		}
+}
+.foot-tel{
+	margin-top: 20px;
+	font-family: 'OpenSansBold';
+	font-size: 16px;
 }

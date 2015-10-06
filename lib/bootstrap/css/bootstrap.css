@@ -4340,14 +4340,18 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   outline: 0;
   border: 0;
   text-align: left;
-  width:65px;
+  width:75px;
   background: url(../../../images/navbar.png)no-repeat 100%;
   background-color: transparent !important;
   text-transform: uppercase;
   color: #353535;
-  font-size: 11px;
+  font-size: 14px;
   font-family: 'OpenSansBold'; 
 }
+  .navbar-toggle:hover{
+    color: #696969;
+  }
+
 .navbar-toggle:focus {
   outline: 0;
 }
